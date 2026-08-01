@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "studioit-f2230"
+  },
+  "targets": {
+    "studioit-f2230": {
+      "hosting": {
+        "live": [
+          "studioit"
+        ]
+      }
+    }
+  }
+}
