@@ -1,3 +1,15 @@
+#!/bin/bash
+
+set -e
+
+echo "========================================"
+echo " StudioIT v1.0"
+echo " PART 005A - GLOBAL CSS RESET"
+echo "========================================"
+
+mkdir -p src/styles
+
+cat > src/styles/global.css <<'EOCSS'
 /* =========================================================
    StudioIT v1.0
    Part 005A - Global CSS Reset
@@ -102,3 +114,33 @@ hr{
 ::-webkit-scrollbar-thumb:hover{
   background:var(--secondary);
 }
+EOCSS
+
+echo ""
+echo "Global CSS berhasil dibuat."
+
+echo ""
+echo "Running Build..."
+npm run build
+
+echo ""
+echo "Git Add..."
+git add .
+
+echo ""
+echo "Git Commit..."
+git commit -m "Part 005A - Global CSS Reset" || true
+
+echo ""
+echo "Git Push..."
+git push
+
+echo ""
+echo "Firebase Deploy..."
+firebase deploy
+
+echo ""
+echo "========================================"
+echo " PART 005A SELESAI"
+echo "========================================"
+
