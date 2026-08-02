@@ -15,3 +15,5 @@ export { default as Page } from "./Page";
 export { default as Main } from "./Main";
 export { default as Content } from "./Content";
 export { default as Sidebar } from "./Sidebar";
+export { default as Wrapper } from "./Wrapper";
+export { default as Shell } from "./Shell";

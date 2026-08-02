@@ -463,3 +463,66 @@ min-height:auto;
 
 }
 
+
+/* =======================================================
+   WRAPPER
+======================================================= */
+
+.wrapper{
+    width:100%;
+    margin:0 auto;
+}
+
+.wrapper-fluid{
+    width:100%;
+}
+
+.wrapper-center{
+    max-width:1440px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.wrapper-full{
+    width:100%;
+    min-height:100vh;
+}
+
+/* =======================================================
+   SHELL
+======================================================= */
+
+.shell{
+    display:flex;
+    min-height:100vh;
+    width:100%;
+}
+
+.shell-column{
+    flex-direction:column;
+}
+
+.shell-row{
+    flex-direction:row;
+}
+
+.shell-center{
+    justify-content:center;
+    align-items:center;
+}
+
+.shell-between{
+    justify-content:space-between;
+}
+
+.shell-grow{
+    flex:1;
+}
+
+@media(max-width:992px){
+
+.shell{
+    flex-direction:column;
+}
+
+}
