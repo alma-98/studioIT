@@ -8,3 +8,6 @@ export { default as Column } from "./Column";
 export { default as Grid } from "./Grid";
 export { default as AutoGrid } from "./AutoGrid";
 export { default as Center } from "./Center";
+export { default as Spacer } from "./Spacer";
+export { default as Masonry } from "./Masonry";
+export { default as MasonryItem } from "./MasonryItem";
