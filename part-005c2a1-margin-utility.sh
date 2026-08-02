@@ -1,90 +1,20 @@
-/* ======================================================
-   StudioIT Utility Classes
-   Part 005C.1A - Display Utility
-====================================================== */
+#!/bin/bash
 
-/* Display */
+set -e
 
-.d-none{display:none!important;}
-.d-block{display:block!important;}
-.d-inline{display:inline!important;}
-.d-inline-block{display:inline-block!important;}
+echo "========================================"
+echo " StudioIT v1.0"
+echo " PART 005C.2A.1"
+echo " MARGIN UTILITY"
+echo "========================================"
 
-.d-flex{display:flex!important;}
-.d-inline-flex{display:inline-flex!important;}
+mkdir -p src/styles
 
-.d-grid{display:grid!important;}
-.d-inline-grid{display:inline-grid!important;}
+##########################################################
+# APPEND MARGIN UTILITIES
+##########################################################
 
-/* Flex Direction */
-
-.flex-row{flex-direction:row!important;}
-.flex-column{flex-direction:column!important;}
-
-.flex-wrap{flex-wrap:wrap!important;}
-.flex-nowrap{flex-wrap:nowrap!important;}
-
-/* Flex Grow */
-
-.flex-1{flex:1!important;}
-.flex-auto{flex:auto!important;}
-.flex-initial{flex:initial!important;}
-.flex-none{flex:none!important;}
-
-/* Justify */
-
-.justify-start{justify-content:flex-start!important;}
-.justify-center{justify-content:center!important;}
-.justify-end{justify-content:flex-end!important;}
-.justify-between{justify-content:space-between!important;}
-.justify-around{justify-content:space-around!important;}
-.justify-evenly{justify-content:space-evenly!important;}
-
-/* Align */
-
-.items-start{align-items:flex-start!important;}
-.items-center{align-items:center!important;}
-.items-end{align-items:flex-end!important;}
-.items-stretch{align-items:stretch!important;}
-
-.self-start{align-self:flex-start!important;}
-.self-center{align-self:center!important;}
-.self-end{align-self:flex-end!important;}
-
-/* Overflow */
-
-.overflow-hidden{overflow:hidden!important;}
-.overflow-auto{overflow:auto!important;}
-.overflow-scroll{overflow:scroll!important;}
-.overflow-x-auto{overflow-x:auto!important;}
-.overflow-y-auto{overflow-y:auto!important;}
-
-/* Position */
-
-.relative{position:relative!important;}
-.absolute{position:absolute!important;}
-.fixed{position:fixed!important;}
-.sticky{position:sticky!important;}
-
-/* Visibility */
-
-.visible{visibility:visible!important;}
-.invisible{visibility:hidden!important;}
-
-/* Cursor */
-
-.cursor-pointer{cursor:pointer!important;}
-.cursor-default{cursor:default!important;}
-.cursor-not-allowed{cursor:not-allowed!important;}
-.cursor-move{cursor:move!important;}
-
-/* Opacity */
-
-.opacity-0{opacity:0!important;}
-.opacity-25{opacity:.25!important;}
-.opacity-50{opacity:.5!important;}
-.opacity-75{opacity:.75!important;}
-.opacity-100{opacity:1!important;}
+cat >> src/styles/utilities.css <<'EOCSS'
 
 /* ======================================================
    Margin Utility
@@ -194,4 +124,22 @@
 .my-12{margin-top:48px!important;margin-bottom:48px!important;}
 .my-16{margin-top:64px!important;margin-bottom:64px!important;}
 .my-auto{margin-top:auto!important;margin-bottom:auto!important;}
+
+EOCSS
+
+##########################################################
+# VALIDASI
+##########################################################
+
+echo ""
+echo "========================================"
+echo " Margin Utility Added"
+echo "========================================"
+
+grep "Margin Utility" -A 5 src/styles/utilities.css
+
+echo ""
+echo "========================================"
+echo " PART 005C.2A.1 SELESAI"
+echo "========================================"
 
