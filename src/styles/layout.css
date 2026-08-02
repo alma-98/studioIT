@@ -271,3 +271,52 @@ grid-template-columns:1fr;
 
 }
 
+
+/* ==========================================================
+   AUTOGRID
+========================================================== */
+
+.auto-grid{
+    display:grid;
+    gap:24px;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+}
+
+.auto-grid-sm{
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+}
+
+.auto-grid-lg{
+    grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
+}
+
+/* ==========================================================
+   CENTER
+========================================================== */
+
+.center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.center-column{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.text-center{
+    text-align:center;
+}
+
+@media(max-width:768px){
+
+.auto-grid,
+.auto-grid-sm,
+.auto-grid-lg{
+    grid-template-columns:1fr;
+}
+
+}
