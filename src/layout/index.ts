@@ -13,3 +13,5 @@ export { default as Masonry } from "./Masonry";
 export { default as MasonryItem } from "./MasonryItem";
 export { default as Page } from "./Page";
 export { default as Main } from "./Main";
+export { default as Content } from "./Content";
+export { default as Sidebar } from "./Sidebar";
