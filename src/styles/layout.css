@@ -75,3 +75,73 @@ padding-right:20px;
 }
 
 }
+
+/* =======================================================
+   FLEX SYSTEM
+======================================================= */
+
+.flex-row{
+    display:flex;
+    flex-direction:row;
+}
+
+.flex-column{
+    display:flex;
+    flex-direction:column;
+}
+
+.flex-wrap{
+    flex-wrap:wrap;
+}
+
+.items-start{
+    align-items:flex-start;
+}
+
+.items-center{
+    align-items:center;
+}
+
+.items-end{
+    align-items:flex-end;
+}
+
+.justify-start{
+    justify-content:flex-start;
+}
+
+.justify-center{
+    justify-content:center;
+}
+
+.justify-between{
+    justify-content:space-between;
+}
+
+.justify-around{
+    justify-content:space-around;
+}
+
+.justify-end{
+    justify-content:flex-end;
+}
+
+.gap-xs{
+    gap:8px;
+}
+
+.gap-sm{
+    gap:12px;
+}
+
+.gap-md{
+    gap:20px;
+}
+
+.gap-lg{
+    gap:32px;
+}
+
+.gap-xl{
+    gap:48px;
+}
