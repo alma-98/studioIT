@@ -362,3 +362,36 @@ grid-template-columns:1fr;
 }
 
 }
+
+/* =======================================================
+   PAGE LAYOUT
+======================================================= */
+
+.page{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    background:var(--background);
+}
+
+.main{
+    flex:1;
+    width:100%;
+}
+
+.main-scroll{
+    overflow:auto;
+}
+
+.main-center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.main-full{
+    width:100%;
+    min-height:100vh;
+}
+

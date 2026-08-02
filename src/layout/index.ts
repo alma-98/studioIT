@@ -11,3 +11,5 @@ export { default as Center } from "./Center";
 export { default as Spacer } from "./Spacer";
 export { default as Masonry } from "./Masonry";
 export { default as MasonryItem } from "./MasonryItem";
+export { default as Page } from "./Page";
+export { default as Main } from "./Main";
