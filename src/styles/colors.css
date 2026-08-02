@@ -1,0 +1,9 @@
+.bg-primary{background:var(--color-primary);}
+.bg-secondary{background:var(--color-secondary);}
+.bg-accent{background:var(--color-accent);}
+.bg-background{background:var(--color-background);}
+
+.text-primary{color:var(--color-primary);}
+.text-dark{color:var(--color-dark);}
+.text-body{color:var(--color-text);}
+.text-white{color:var(--color-white);}
