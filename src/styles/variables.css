@@ -1,9 +1,18 @@
 :root{
-  --color-background:#FFE8E8;
-  --color-primary:#E63946;
-  --color-secondary:#FF6B6B;
-  --color-accent:#F4A261;
-  --color-dark:#1F2937;
-  --color-text:#374151;
-  --color-white:#FFFFFF;
+
+--background:#FFE8E8;
+--primary:#E63946;
+--secondary:#FF6B6B;
+--accent:#F4A261;
+
+--text:#374151;
+--heading:#1F2937;
+
+--surface:#FFFFFF;
+--border:#E5E7EB;
+
+--success:#16A34A;
+--warning:#F59E0B;
+--danger:#DC2626;
+
 }
