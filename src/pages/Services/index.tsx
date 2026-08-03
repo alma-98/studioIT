@@ -57,7 +57,7 @@ margin:"auto",
 display:"grid",
 gridTemplateColumns:"repeat(auto-fit,minmax(320px,1fr))",
 gap:"60px",
-alignItems:"start"
+alignItems:"center"
 }}
 
 >
@@ -148,6 +148,7 @@ Dengan pendekatan teknologi modern dan scalable, StudioIT membantu membangun sis
 
 style={{
 display:"grid",
+gridTemplateColumns:"repeat(auto-fit,minmax(220px,1fr))",
 gap:"18px"
 }}
 
