@@ -46,9 +46,9 @@ style={{
 
 fontFamily:"Poppins",
 
-fontSize:"30px",
+fontSize:"26px",
 
-lineHeight:"1.3",
+lineHeight:"1.4",
 
 color:"#1F2937",
 
@@ -59,9 +59,7 @@ marginBottom:"50px"
 }}
 >
 
-Membangun Masa Depan Digital
-<br/>
-Bersama Teknologi Modern
+Membangun Masa Depan Digital Bersama Teknologi Modern
 
 </h2>
 
