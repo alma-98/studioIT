@@ -186,18 +186,19 @@ y:-8
 
 style={{
 background:"#FFFFFF",
-padding:"18px 22px",
-borderRadius:"16px",
+width:"260px",
+padding:"14px 18px",
+borderRadius:"14px",
 display:"flex",
 alignItems:"center",
-gap:"14px",
+gap:"12px",
 boxShadow:"0 8px 20px rgba(0,0,0,.06)"
 }}
 
 >
 
 <Icon
-size={22}
+size={20}
 color="#E63946"
 />
 
@@ -206,8 +207,8 @@ color="#E63946"
 
 style={{
 fontFamily:"Poppins",
-fontSize:"16px",
-fontWeight:600,
+fontSize:"14px",
+fontWeight:400,
 color:"#1F2937"
 }}
 
