@@ -1,3 +1,29 @@
+#!/bin/bash
+
+set -e
+
+echo "=============================================="
+echo " StudioIT PART 008B.7"
+echo " Technology Stack Premium"
+echo "=============================================="
+
+STAMP=$(date +"%Y%m%d_%H%M%S")
+
+
+echo "[1/7] Backup..."
+
+mkdir -p backup/part-008b7-$STAMP
+
+cp src/pages/Landing/components/Technology.tsx \
+backup/part-008b7-$STAMP/ 2>/dev/null || true
+
+
+echo "[2/7] Create Technology Component..."
+
+mkdir -p src/pages/Landing/components
+
+
+cat <<'TECH' > src/pages/Landing/components/Technology.tsx
 
 import { motion } from "framer-motion";
 
@@ -262,4 +288,61 @@ lineHeight:"1.6"
 )
 
 }
+
+TECH
+
+
+echo "[3/7] Integrate Landing..."
+
+python3 <<'PY'
+from pathlib import Path
+
+p=Path("src/pages/Landing/LandingPage.tsx")
+
+text=p.read_text()
+
+if "Technology" not in text:
+    text=text.replace(
+        'import PortfolioPreview from "./components/PortfolioPreview";',
+        'import PortfolioPreview from "./components/PortfolioPreview";\nimport Technology from "./components/Technology";'
+    )
+
+    text=text.replace(
+        '<PortfolioPreview/>',
+        '<PortfolioPreview/>\n<Technology/>'
+    )
+
+p.write_text(text)
+
+print("Technology integrated")
+PY
+
+
+echo "[4/7] Build..."
+
+npm run build
+
+
+echo "[5/7] Commit..."
+
+git add .
+
+git commit -m "PART 008B.7 Technology Stack Premium Section" || true
+
+
+echo "[6/7] Push..."
+
+git push origin main || true
+
+
+echo "[7/7] Deploy..."
+
+firebase deploy --only hosting
+
+
+echo "=============================================="
+echo " PART 008B.7 COMPLETE"
+echo " Backup:"
+echo " backup/part-008b7-$STAMP"
+echo "=============================================="
 
