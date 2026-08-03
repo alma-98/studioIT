@@ -19,24 +19,47 @@ StudioIT
 Transformasi Digital Untuk Indonesia Maju
 </p>
 
-<p>
-Powered By Investment Technology Indonesia
-</p>
 
 <p>
-https://investment-tech-indonesia.web.app
+Powered By{" "}
+<a
+href="https://investment-tech-indonesia.web.app"
+target="_blank"
+rel="noopener noreferrer"
+style={{
+color:"#FFFFFF"
+}}
+>
+Investment Technology Indonesia
+</a>
 </p>
 
+
 <p>
-SMS / WhatsApp
+SMS
 <br/>
+<a
+href="sms:+6285283397198"
+style={{
+color:"#FFFFFF"
+}}
+>
 +6285283397198
+</a>
 </p>
+
 
 <p>
 Email
 <br/>
+<a
+href="mailto:alma.budsteddy88@gmail.com"
+style={{
+color:"#FFFFFF"
+}}
+>
 alma.budsteddy88@gmail.com
+</a>
 </p>
 
 
