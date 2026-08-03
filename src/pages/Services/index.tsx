@@ -108,18 +108,6 @@ fontFamily:"Poppins"
 </h3>
 
 
-<p
-
-style={{
-color:"#374151"
-}}
-
->
-
-Solusi teknologi modern untuk mendukung kebutuhan bisnis.
-
-</p>
-
 
 </div>
 
