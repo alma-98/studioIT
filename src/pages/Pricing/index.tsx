@@ -108,7 +108,7 @@ color:"#1F2937"
 
 >
 
-Pricing StudioIT
+Paket Kami StudioIT
 
 </h1>
 
