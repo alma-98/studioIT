@@ -83,15 +83,40 @@ margin:"auto"
 >
 
 
+<p
+
+style={{
+display:"inline-block",
+background:"#E63946",
+color:"#FFFFFF",
+padding:"8px 18px",
+borderRadius:"30px",
+fontFamily:"Poppins",
+fontSize:"14px",
+fontWeight:600
+}}
+
+>
+
+Portfolio Project
+
+</p>
+
+
+
 <h1
+
 style={{
 fontFamily:"Poppins",
 fontSize:"38px",
 color:"#1F2937"
 }}
+
 >
 
-Portfolio Project Project
+Solusi Digital
+<br/>
+Untuk Bisnis Modern
 
 </h1>
 
@@ -106,10 +131,9 @@ color:"#374151"
 >
 
 Solusi digital yang telah dan sedang dikembangkan StudioIT.
-
 Jelajahi berbagai project teknologi yang dibangun dengan
 teknologi modern dengan fokus pada performa, keamanan,
-skalabilitas, dan pengalaman pengguna.
+skalabilitas, dan pengalaman pengguna terbaik.
 
 </p>
 
