@@ -156,6 +156,16 @@ textAlign:"left"
 
 >
 
+<div
+
+style={{
+display:"flex",
+alignItems:"center",
+gap:"14px"
+}}
+
+>
+
 <item.icon
 size={20}
 color="#E63946"
@@ -176,6 +186,8 @@ margin:0
 {item.name}
 
 </h3>
+
+</div>
 
 
 </div>
