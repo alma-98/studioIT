@@ -92,7 +92,7 @@ return(
 style={{
 padding:"100px 24px",
 background:"#FFE8E8",
-textAlign:"center"
+textAlign:"left"
 }}
 
 >
