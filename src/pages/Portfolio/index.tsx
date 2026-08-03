@@ -108,7 +108,7 @@ Portfolio Project
 
 style={{
 fontFamily:"Poppins",
-fontSize:"38px",
+fontSize:"32px",
 color:"#1F2937"
 }}
 
@@ -130,10 +130,9 @@ color:"#374151"
 }}
 >
 
-Solusi digital yang telah dan sedang dikembangkan StudioIT.
-Jelajahi berbagai project teknologi yang dibangun dengan
-teknologi modern dengan fokus pada performa, keamanan,
-skalabilitas, dan pengalaman pengguna terbaik.
+StudioIT menghadirkan berbagai solusi teknologi digital yang telah dan sedang dikembangkan untuk membantu bisnis melakukan transformasi digital. Kami membangun berbagai project mulai dari website, aplikasi mobile, sistem enterprise, hingga solusi berbasis AI dengan menggunakan teknologi modern yang fokus pada performa, keamanan, skalabilitas, dan pengalaman pengguna.
+
+Setiap project dikembangkan dengan pendekatan yang terstruktur untuk menghasilkan solusi digital yang efektif, mudah dikembangkan, dan siap mendukung kebutuhan bisnis di masa depan.
 
 </p>
 
