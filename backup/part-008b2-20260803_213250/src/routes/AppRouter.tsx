@@ -1,0 +1,113 @@
+
+import {
+ BrowserRouter,
+ Routes,
+ Route
+} from "react-router-dom";
+
+
+import MainLayout from "../layout/MainLayout";
+
+
+import Home from "../pages/Home";
+import Services from "../pages/Services";
+import Portfolio from "../pages/Portfolio";
+import Pricing from "../pages/Pricing";
+import Contact from "../pages/Contact";
+import Login from "../pages/Login";
+import Register from "../pages/Register";
+import Dashboard from "../pages/Dashboard";
+import Admin from "../pages/Admin";
+import Blog from "../pages/Blog";
+import FAQ from "../pages/FAQ";
+
+
+export default function AppRouter(){
+
+return (
+
+<BrowserRouter>
+
+<Routes>
+
+
+<Route element={<MainLayout/>}>
+
+
+<Route
+path="/"
+element={<Home/>}
+/>
+
+
+<Route
+path="/services"
+element={<Services/>}
+/>
+
+
+<Route
+path="/portfolio"
+element={<Portfolio/>}
+/>
+
+
+<Route
+path="/pricing"
+element={<Pricing/>}
+/>
+
+
+<Route
+path="/blog"
+element={<Blog/>}
+/>
+
+
+<Route
+path="/faq"
+element={<FAQ/>}
+/>
+
+
+<Route
+path="/contact"
+element={<Contact/>}
+/>
+
+
+<Route
+path="/login"
+element={<Login/>}
+/>
+
+
+<Route
+path="/register"
+element={<Register/>}
+/>
+
+
+<Route
+path="/dashboard"
+element={<Dashboard/>}
+/>
+
+
+<Route
+path="/admin"
+element={<Admin/>}
+/>
+
+
+</Route>
+
+
+</Routes>
+
+</BrowserRouter>
+
+)
+
+}
+

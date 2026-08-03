@@ -102,17 +102,3 @@ hr{
 ::-webkit-scrollbar-thumb:hover{
   background:var(--secondary);
 }
-
-body{
-margin:0;
-font-family:Inter,Arial,sans-serif;
-}
-
-button{
-font-family:Poppins,Arial,sans-serif;
-}
-
-h1,h2,h3{
-font-family:Poppins,Arial,sans-serif;
-}
-
