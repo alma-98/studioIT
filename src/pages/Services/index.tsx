@@ -1,14 +1,40 @@
+import {
+Globe,
+Smartphone,
+BrainCircuit,
+Building2,
+Cloud
+} from "lucide-react";
 
 
 export default function Services(){
 
 const services=[
 
-"Website Development",
-"Mobile Application",
-"Artificial Intelligence",
-"Enterprise System",
-"Cloud Infrastructure"
+{
+name:"Website Development",
+icon:Globe
+},
+
+{
+name:"Mobile Application",
+icon:Smartphone
+},
+
+{
+name:"Artificial Intelligence",
+icon:BrainCircuit
+},
+
+{
+name:"Enterprise System",
+icon:Building2
+},
+
+{
+name:"Cloud Infrastructure",
+icon:Cloud
+}
 
 ];
 
@@ -100,7 +126,7 @@ services.map(item=>(
 
 <div
 
-key={item}
+key={item.name}
 
 style={{
 
@@ -114,6 +140,29 @@ textAlign:"center"
 
 >
 
+<div
+
+style={{
+width:"60px",
+height:"60px",
+borderRadius:"18px",
+background:"#FFE8E8",
+display:"flex",
+alignItems:"center",
+justifyContent:"center",
+margin:"0 auto 20px"
+}}
+
+>
+
+<item.icon
+size={30}
+color="#E63946"
+/>
+
+</div>
+
+
 <h3
 
 style={{
@@ -122,22 +171,9 @@ fontFamily:"Poppins"
 
 >
 
-{item}
+{item.name}
 
 </h3>
-
-
-<p
-
-style={{
-color:"#374151"
-}}
-
->
-
-Solusi teknologi modern untuk mendukung kebutuhan bisnis.
-
-</p>
 
 
 </div>
@@ -161,4 +197,3 @@ Solusi teknologi modern untuk mendukung kebutuhan bisnis.
 )
 
 }
-
