@@ -4,7 +4,7 @@ export default function FloatingSMS(){
 return(
 
 <a
-href="https://wa.me/6285283397198"
+href="sms:+6285283397198"
 target="_blank"
 style={{
 position:"fixed",
@@ -20,7 +20,7 @@ fontWeight:600
 }}
 >
 
-SMS / WhatsApp
+SMS StudioIT
 
 </a>
 
