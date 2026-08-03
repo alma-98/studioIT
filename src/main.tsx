@@ -8,6 +8,7 @@ import "./styles/theme.css";
 import "./styles/typography.css";
 import "./styles/layout.css";
 import "./styles/utilities.css";
+import "./styles/breakpoints.css";
 
 import App from "./App";
 import { StudioThemeProvider } from "./theme";
