@@ -54,7 +54,7 @@ dan Sistem Digital Bisnis.
 
 <div>
 
-<button
+<a href="mailto:alma.budsteddy88@gmail.com" style={{textDecoration:"none"}}>\n<button
 style={{
 background:"#E63946",
 color:"#FFFFFF",
@@ -64,9 +64,9 @@ borderRadius:"12px",
 cursor:"pointer"
 }}
 >
-Mulai Project
+Konsultasi Project
 <ArrowRight size={18}/>
-</button>
+</button>\n</a>
 
 
 </div>
