@@ -1,73 +1,21 @@
 
 import { motion } from "framer-motion";
-import {
-Code2,
-Smartphone,
-Palette,
-Building2,
-BrainCircuit,
-Cloud,
-Link,
-Settings
-} from "lucide-react";
 
 
 export default function Services(){
 
 const services=[
 
-{
-title:"Website Development",
-desc:"Membangun website profesional, cepat, responsive, dan scalable untuk kebutuhan bisnis.",
-icon:Code2
-},
+"Website Development",
+"Mobile Application",
+"Artificial Intelligence",
+"Enterprise System",
+"Cloud Infrastructure"
 
-{
-title:"Mobile Application",
-desc:"Mengembangkan aplikasi Android dan iOS dengan pengalaman pengguna modern.",
-icon:Smartphone
-},
-
-{
-title:"UI/UX Design",
-desc:"Menciptakan desain digital modern yang mudah digunakan.",
-icon:Palette
-},
-
-{
-title:"Enterprise System",
-desc:"Membangun ERP, CRM, HRIS, POS, dan sistem informasi bisnis.",
-icon:Building2
-},
-
-{
-title:"Artificial Intelligence",
-desc:"Mengembangkan AI, automation, analytics, dan intelligent system.",
-icon:BrainCircuit
-},
-
-{
-title:"Cloud Solution",
-desc:"Membangun infrastruktur cloud yang aman dan scalable.",
-icon:Cloud
-},
-
-{
-title:"API Integration",
-desc:"Menghubungkan berbagai sistem melalui API.",
-icon:Link
-},
-
-{
-title:"Maintenance & Support",
-desc:"Monitoring, update, dan pengembangan fitur lanjutan.",
-icon:Settings
-}
-
-]
+];
 
 
-return(
+return (
 
 <div>
 
@@ -81,7 +29,6 @@ background:"#FFE8E8"
 
 >
 
-
 <div
 
 style={{
@@ -89,33 +36,44 @@ maxWidth:"1200px",
 margin:"auto",
 display:"grid",
 gridTemplateColumns:"repeat(auto-fit,minmax(320px,1fr))",
-gap:"50px",
+gap:"60px",
 alignItems:"center"
 }}
 
 >
 
 
-<div
+<div>
+
+<p
+
 style={{
-textAlign:"left"
+fontFamily:"Poppins",
+fontWeight:600,
+color:"#E63946"
 }}
+
 >
+
+Software House & Digital Agency
+
+</p>
 
 
 <h1
 
 style={{
 fontFamily:"Poppins",
-fontSize:"36px",
+fontSize:"42px",
+lineHeight:"1.2",
 color:"#1F2937"
 }}
 
 >
 
-Software House
+Transformasi Digital
 <br/>
-&amp; Digital Agency
+Untuk Indonesia Maju
 
 </h1>
 
@@ -132,11 +90,9 @@ textAlign:"justify"
 
 >
 
-StudioIT adalah Software House dan Digital Agency yang membantu
-perusahaan, UMKM, startup, dan organisasi membangun solusi
-teknologi modern melalui pengembangan website, aplikasi mobile,
-sistem enterprise, Artificial Intelligence (AI), cloud solution,
-dan integrasi digital.
+StudioIT membantu perusahaan, UMKM, startup, dan organisasi
+membangun solusi teknologi modern melalui software development,
+AI, cloud, dan sistem digital terintegrasi.
 
 </p>
 
@@ -158,63 +114,71 @@ textAlign:"right"
 
 style={{
 fontFamily:"Poppins",
-fontSize:"30px",
+fontSize:"26px",
 color:"#1F2937"
 }}
 
 >
 
-Partner Teknologi Untuk
-<br/>
-Transformasi Digital
+Solusi Teknologi Kami
 
 </h2>
 
 
-<p
+
+<div
 
 style={{
-fontFamily:"Inter",
-fontSize:"16px",
-lineHeight:"1.8",
-color:"#374151",
-textAlign:"justify"
+marginTop:"25px",
+display:"grid",
+gap:"16px"
 }}
 
 >
 
-StudioIT membantu bisnis menciptakan solusi digital modern
-yang aman, scalable, dan siap berkembang mengikuti kebutuhan
-bisnis masa depan.
 
-</p>
+{
 
+services.map((item,index)=>(
 
-<a
+<motion.div
 
-href="mailto:alma.budsteddy88@gmail.com"
+key={item}
 
->
+initial={{
+opacity:0,
+x:20
+}}
 
-<button
+whileInView={{
+opacity:1,
+x:0
+}}
+
+transition={{
+delay:index*.1
+}}
 
 style={{
-background:"#E63946",
-color:"#FFFFFF",
-border:"none",
-padding:"14px 28px",
-borderRadius:"14px",
-cursor:"pointer"
+
+fontFamily:"Poppins",
+fontSize:"18px",
+color:"#374151"
+
 }}
 
 >
 
-Konsultasi Project
+{item}
 
-</button>
+</motion.div>
+
+))
+
+}
 
 
-</a>
+</div>
 
 
 </div>
@@ -250,9 +214,9 @@ margin:"auto"
 <h2
 
 style={{
+textAlign:"center",
 fontFamily:"Poppins",
-fontSize:"30px",
-textAlign:"center"
+fontSize:"30px"
 }}
 
 >
@@ -267,8 +231,8 @@ Layanan StudioIT
 
 style={{
 display:"grid",
-gridTemplateColumns:"repeat(auto-fit,minmax(260px,1fr))",
-gap:"28px",
+gridTemplateColumns:"repeat(auto-fit,minmax(220px,1fr))",
+gap:"25px",
 marginTop:"40px"
 }}
 
@@ -276,92 +240,54 @@ marginTop:"40px"
 
 
 {
-services.map((item,index)=>{
 
-const Icon=item.icon;
-
-
-return(
-
-<motion.div
-
-key={item.title}
-
-initial={{
-opacity:0,
-y:20
-}}
-
-whileInView={{
-opacity:1,
-y:0
-}}
-
-transition={{
-delay:index*.08
-}}
-
-whileHover={{
-y:-8
-}}
-
-style={{
-background:"#FFFFFF",
-padding:"30px",
-borderRadius:"20px",
-boxShadow:"0 15px 35px rgba(0,0,0,.08)",
-textAlign:"center"
-}}
-
->
-
+services.map(item=>(
 
 <div
 
+key={item}
+
 style={{
-width:"64px",
-height:"64px",
+
+background:"#FFFFFF",
+padding:"30px",
 borderRadius:"18px",
-background:"#FFE8E8",
-display:"flex",
-justifyContent:"center",
-alignItems:"center",
-margin:"auto"
+boxShadow:"0 10px 30px rgba(0,0,0,.08)",
+textAlign:"center"
+
 }}
 
 >
 
-<Icon
-size={32}
-color="#E63946"
-/>
-
-</div>
-
-
 <h3
+
 style={{
 fontFamily:"Poppins"
 }}
+
 >
-{item.title}
+
+{item}
+
 </h3>
 
 
 <p
+
 style={{
 color:"#374151"
 }}
+
 >
-{item.desc}
+
+Solusi teknologi modern untuk mendukung kebutuhan bisnis.
+
 </p>
 
 
-</motion.div>
+</div>
 
-)
-
-})
+))
 
 }
 
