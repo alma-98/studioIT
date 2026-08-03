@@ -115,8 +115,7 @@ color:"#1F2937"
 
 >
 
-Solusi Teknologi Digital
-Untuk Bisnis Modern
+Solusi Digital Inovatif Untuk Pertumbuhan Bisnis
 
 </h1>
 
@@ -134,10 +133,9 @@ color:"#374151"
 
 >
 
-StudioIT menyediakan layanan pengembangan teknologi
-mulai dari website, aplikasi mobile, sistem enterprise,
-AI, cloud, hingga integrasi digital untuk membantu bisnis
-melakukan transformasi digital.
+StudioIT membangun teknologi modern mulai dari aplikasi,
+platform digital, AI, hingga cloud solution untuk membantu
+bisnis berkembang di era digital.
 
 </p>
 
