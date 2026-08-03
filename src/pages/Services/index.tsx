@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import {
 Globe,
 Smartphone,
@@ -60,7 +62,23 @@ alignItems:"center"
 >
 
 
-<div>
+<motion.div
+
+initial={{
+opacity:0,
+y:30
+}}
+
+whileInView={{
+opacity:1,
+y:0
+}}
+
+transition={{
+duration:0.6
+}}
+
+>
 
 
 <p
@@ -122,7 +140,7 @@ Dengan pendekatan teknologi modern dan scalable, StudioIT membantu membangun sis
 </p>
 
 
-</div>
+</motion.div>
 
 
 
@@ -138,15 +156,33 @@ gap:"18px"
 
 {
 
-services.map(item=>{
+services.map((item,index)=>{
 
 const Icon=item.icon;
 
 return (
 
-<div
+<motion.div
 
 key={item.name}
+
+initial={{
+opacity:0,
+y:30
+}}
+
+whileInView={{
+opacity:1,
+y:0
+}}
+
+transition={{
+delay:index*.1
+}}
+
+whileHover={{
+y:-8
+}}
 
 style={{
 background:"#FFFFFF",
@@ -182,7 +218,7 @@ color:"#1F2937"
 </span>
 
 
-</div>
+</motion.div>
 
 )
 
