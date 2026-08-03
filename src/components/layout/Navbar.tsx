@@ -84,6 +84,13 @@ Contact
 
 
 
+<a
+href="mailto:alma.budsteddy88@gmail.com"
+style={{
+textDecoration:"none"
+}}
+>
+
 <button
 style={{
 background:"#E63946",
@@ -95,9 +102,11 @@ cursor:"pointer"
 }}
 >
 
-Mulai Project
+Konsultasi Project
 
 </button>
+
+</a>
 
 
 </div>
