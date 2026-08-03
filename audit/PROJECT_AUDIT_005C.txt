@@ -1,0 +1,280 @@
+========================================
+StudioIT Project Audit
+========================================
+
+Tanggal : Mon Aug  3 20:17:23 WIB 2026
+
+========================================
+ROOT
+========================================
+.
+./.firebase
+./.firebaserc
+./.git
+./.gitignore
+./README.md
+./audit
+./audit-project.sh
+./dist
+./eslint.config.js
+./firebase.json
+./fix-theme-css.sh
+./index.html
+./node_modules
+./package-lock.json
+./package.json
+./part-001-foundation.sh
+./part-002a-design-system.sh
+./part-002b-ui-components.sh
+./part-002c-theme-provider.sh
+./part-003-color-theme.sh
+./part-004-typography.sh
+./part-005a-global-css-reset.sh
+./part-005b1-layout-foundation.sh
+./part-005b2-flex-system.sh
+./part-005b3a-grid-system.sh
+./part-005b3b-autogrid-center.sh
+./part-005b3c-spacer-masonry.sh
+./part-005b4a-page-main.sh
+./part-005b4b-content-sidebar.sh
+./part-005b4c-wrapper-shell.sh
+./part-005b4d1-layout-final.sh
+./part-005b4d2-validation.sh
+./part-005c1a-display-utility.sh
+./part-005c1b-validation.sh
+./part-005c2a1-margin-utility.sh
+./part-005c2a2-margin-validation.sh
+./part-005c2b1-padding-utility.sh
+./part-005c2b2-padding-validation.sh
+./part-005c2c-gap-utility.sh
+./part-005c2d-final-spacing-validation.sh
+./public
+./src
+./tsconfig.app.json
+./tsconfig.json
+./tsconfig.node.json
+./vite.config.ts
+
+========================================
+SRC
+========================================
+src
+src/App.css
+src/App.tsx
+src/assets
+src/assets/hero.png
+src/assets/react.svg
+src/assets/vite.svg
+src/components
+src/components/chat
+src/components/common
+src/components/home
+src/components/layout
+src/components/sms
+src/components/ui
+src/constants
+src/constants/theme.ts
+src/context
+src/context/ThemeContext.tsx
+src/firebase
+src/firebase/firebase.ts
+src/hooks
+src/index.css
+src/layout
+src/layout/AutoGrid.tsx
+src/layout/Center.tsx
+src/layout/Column.tsx
+src/layout/Container.tsx
+src/layout/Content.tsx
+src/layout/Flex.tsx
+src/layout/Grid.tsx
+src/layout/Main.tsx
+src/layout/MainLayout.tsx
+src/layout/Masonry.tsx
+src/layout/MasonryItem.tsx
+src/layout/Page.tsx
+src/layout/README.md
+src/layout/Row.tsx
+src/layout/Section.tsx
+src/layout/Shell.tsx
+src/layout/Sidebar.tsx
+src/layout/Spacer.tsx
+src/layout/Stack.tsx
+src/layout/Wrapper.tsx
+src/layout/index.ts
+src/layouts
+src/layouts/MainLayout.tsx
+src/main.tsx
+src/pages
+src/pages/About
+src/pages/Admin
+src/pages/Blog
+src/pages/Contact
+src/pages/Dashboard
+src/pages/FAQ
+src/pages/Home
+src/pages/Login
+src/pages/Order
+src/pages/Portfolio
+src/pages/Pricing
+src/pages/Register
+src/pages/Services
+src/router
+src/router/AppRouter.tsx
+src/routes
+src/routes/AppRouter.tsx
+src/services
+src/services/firebaseService.ts
+src/styles
+src/styles/colors.css
+src/styles/global.css
+src/styles/layout.css
+src/styles/theme.css
+src/styles/typography.css
+src/styles/utilities.css
+src/styles/variables.css
+src/theme
+src/theme/breakpoints.ts
+src/theme/colors.ts
+src/theme/index.ts
+src/theme/palette.ts
+src/theme/provider.tsx
+src/theme/radius.ts
+src/theme/semantic.ts
+src/theme/shadow.ts
+src/theme/spacing.ts
+src/theme/typography.ts
+src/types
+src/utils
+src/utils/constants.ts
+
+========================================
+LAYOUT
+========================================
+src/layout/AutoGrid.tsx
+src/layout/Center.tsx
+src/layout/Column.tsx
+src/layout/Container.tsx
+src/layout/Content.tsx
+src/layout/Flex.tsx
+src/layout/Grid.tsx
+src/layout/Main.tsx
+src/layout/MainLayout.tsx
+src/layout/Masonry.tsx
+src/layout/MasonryItem.tsx
+src/layout/Page.tsx
+src/layout/README.md
+src/layout/Row.tsx
+src/layout/Section.tsx
+src/layout/Shell.tsx
+src/layout/Sidebar.tsx
+src/layout/Spacer.tsx
+src/layout/Stack.tsx
+src/layout/Wrapper.tsx
+src/layout/index.ts
+
+========================================
+STYLES
+========================================
+src/styles/colors.css
+src/styles/global.css
+src/styles/layout.css
+src/styles/theme.css
+src/styles/typography.css
+src/styles/utilities.css
+src/styles/variables.css
+
+========================================
+MAIN IMPORTS
+========================================
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./styles/global.css";
+import "./styles/variables.css";
+import "./styles/colors.css";
+import "./styles/theme.css";
+import "./styles/typography.css";
+import "./styles/layout.css";
+import "./styles/utilities.css";
+import App from "./App";
+import { StudioThemeProvider } from "./theme";
+
+========================================
+PACKAGE
+========================================
+{
+  "name": "studioit",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "deploy": "npm run build && firebase deploy --only hosting",
+    "publish": "npm run push && npm run deploy",
+    "push": "git add . && git commit -m \"Update\" && git push",
+    "clean": "rm -rf dist",
+    "rebuild": "npm run clean && npm run build"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "firebase": "^12.17.0",
+    "framer-motion": "^12.43.0",
+    "lucide-react": "^1.28.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-dropzone": "^19.2.0",
+    "react-hook-form": "^7.84.0",
+    "react-hot-toast": "^2.6.0",
+    "react-markdown": "^10.1.0",
+    "react-router-dom": "^7.18.2",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.4",
+    "eslint": "^10.8.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.3",
+    "globals": "^17.7.0",
+    "typescript": "~6.0.2",
+    "typescript-eslint": "^8.65.0",
+    "vite": "^8.2.0"
+  }
+}
+
+========================================
+BUILD
+========================================
+
+> studioit@0.0.0 build
+> tsc -b && vite build
+
+vite v8.2.0 building client environment for production...
+[2Ktransforming...✓ 44 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.45 kB │ gzip:  0.29 kB
+dist/assets/index-BVY0jmr4.css   15.39 kB │ gzip:  3.37 kB
+dist/assets/index-BRbsfCyU.js   229.93 kB │ gzip: 73.80 kB
+
+✓ built in 267ms
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .firebase/hosting.ZGlzdA.cache
+	modified:   audit-project.sh
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	audit/PROJECT_AUDIT_005C.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")

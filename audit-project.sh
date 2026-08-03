@@ -1,60 +1,77 @@
 #!/bin/bash
 
-set -e
+echo "========================================"
+echo " StudioIT v1.0"
+echo " PROJECT AUDIT CHECKPOINT"
+echo "========================================"
 
 mkdir -p audit
 
-REPORT=audit/PROJECT_AUDIT.md
+REPORT="audit/PROJECT_AUDIT_005C.txt"
 
-echo "# StudioIT Project Audit" > "$REPORT"
-echo "" >> "$REPORT"
-echo "Tanggal : $(date)" >> "$REPORT"
-echo "" >> "$REPORT"
+{
+echo "========================================"
+echo "StudioIT Project Audit"
+echo "========================================"
+echo ""
+echo "Tanggal : $(date)"
+echo ""
 
-echo "## Project Structure" >> "$REPORT"
-tree -L 3 >> "$REPORT" 2>/dev/null || find . -maxdepth 3 >> "$REPORT"
-
-FILES=(
-package.json
-vite.config.ts
-firebase.json
-src/main.tsx
-src/App.tsx
-src/styles/global.css
-src/styles/theme.css
-src/styles/colors.css
-src/styles/variables.css
-src/styles/typography.css
-src/theme/index.ts
-src/theme/colors.ts
-src/theme/palette.ts
-src/theme/semantic.ts
-src/theme/typography.ts
-)
-
-for FILE in "${FILES[@]}"
-do
-    if [ -f "$FILE" ]; then
-        SAFE=$(echo "$FILE" | sed 's#/#_#g')
-
-        echo "" >> "$REPORT"
-        echo "===================================" >> "$REPORT"
-        echo "$FILE" >> "$REPORT"
-        echo "===================================" >> "$REPORT"
-
-        cat "$FILE" >> "$REPORT"
-
-        cp "$FILE" "audit/$SAFE"
-    fi
-done
+echo "========================================"
+echo "ROOT"
+echo "========================================"
+find . -maxdepth 1 | sort
 
 echo ""
-echo "======================================="
+echo "========================================"
+echo "SRC"
+echo "========================================"
+find src -maxdepth 2 | sort
+
+echo ""
+echo "========================================"
+echo "LAYOUT"
+echo "========================================"
+find src/layout -maxdepth 1 -type f | sort
+
+echo ""
+echo "========================================"
+echo "STYLES"
+echo "========================================"
+find src/styles -maxdepth 1 -type f | sort
+
+echo ""
+echo "========================================"
+echo "MAIN IMPORTS"
+echo "========================================"
+grep '^import' src/main.tsx
+
+echo ""
+echo "========================================"
+echo "PACKAGE"
+echo "========================================"
+cat package.json
+
+echo ""
+echo "========================================"
+echo "BUILD"
+echo "========================================"
+
+} > "$REPORT"
+
+echo ""
+echo "Running build..."
+npm run build >> "$REPORT" 2>&1
+
+echo ""
+echo "Git Status..."
+git status >> "$REPORT"
+
+echo ""
+echo "========================================"
 echo "Audit selesai"
-echo "======================================="
+echo "========================================"
 echo ""
 echo "Laporan:"
 echo "$REPORT"
-echo ""
-echo "File audit disalin ke folder:"
-echo "audit/"
+
