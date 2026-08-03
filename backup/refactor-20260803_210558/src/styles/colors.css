@@ -1,0 +1,15 @@
+.bg-background{background:var(--background);}
+.bg-primary{background:var(--primary);}
+.bg-secondary{background:var(--secondary);}
+.bg-accent{background:var(--accent);}
+.bg-surface{background:var(--surface);}
+
+.text-heading{color:var(--heading);}
+.text-body{color:var(--text);}
+.text-primary{color:var(--primary);}
+.text-secondary{color:var(--secondary);}
+.text-accent{color:var(--accent);}
+
+.border-default{
+border:1px solid var(--border);
+}
