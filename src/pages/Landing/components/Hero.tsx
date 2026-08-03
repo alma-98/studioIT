@@ -106,9 +106,9 @@ style={{
 
 fontFamily:"Poppins",
 
-fontSize:"42px",
+fontSize:"36px",
 
-lineHeight:"1.25",
+lineHeight:"1.3",
 
 color:"#1F2937",
 
