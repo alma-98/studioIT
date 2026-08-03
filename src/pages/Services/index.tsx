@@ -42,19 +42,24 @@ margin:"auto"
 >
 
 
-<h2
+<p
 
 style={{
-textAlign:"center",
+display:"inline-block",
+background:"#E63946",
+color:"#FFFFFF",
+padding:"8px 18px",
+borderRadius:"20px",
 fontFamily:"Poppins",
-fontSize:"30px"
+fontSize:"14px",
+fontWeight:600
 }}
 
 >
 
 Layanan Kami
 
-</h2>
+</p>
 
 
 
