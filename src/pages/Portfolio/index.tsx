@@ -115,9 +115,7 @@ color:"#1F2937"
 
 >
 
-Solusi Digital
-<br/>
-Untuk Bisnis Modern
+Solusi Digital Untuk Bisnis Modern
 
 </h1>
 
