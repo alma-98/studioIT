@@ -1,36 +1,55 @@
 
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { ChevronDown } from "lucide-react";
 
 
 export default function FAQ(){
 
-const questions=[
+const items=[
 
-"Berapa lama proses pembuatan website?",
+{
+q:"Berapa lama proses pembuatan website?",
+a:"Proses pengerjaan tergantung kompleksitas project, fitur, dan kebutuhan bisnis."
+},
 
-"Apakah StudioIT menerima project custom?",
+{
+q:"Apakah StudioIT menerima project custom?",
+a:"Ya, StudioIT menerima pengembangan solusi custom sesuai kebutuhan bisnis."
+},
 
-"Teknologi apa yang digunakan?",
+{
+q:"Teknologi apa yang digunakan?",
+a:"StudioIT menggunakan React, TypeScript, Firebase, AI, Cloud, dan teknologi modern lainnya."
+},
 
-"Apakah tersedia maintenance setelah project selesai?",
+{
+q:"Apakah tersedia maintenance setelah project selesai?",
+a:"Ya, tersedia layanan maintenance dan support setelah project selesai."
+},
 
-"Bagaimana proses konsultasi project?"
+{
+q:"Bagaimana proses konsultasi project?",
+a:"Dimulai dari konsultasi kebutuhan, analisis solusi, proposal, kemudian proses pengembangan."
+}
 
 ]
+
+
+const [open,setOpen]=useState<number|null>(null);
 
 
 return(
 
 <section
 style={{
-padding:"90px 24px",
+padding:"80px 24px",
 background:"#FFFFFF"
 }}
 >
 
 <div
 style={{
-maxWidth:"900px",
+maxWidth:"850px",
 margin:"auto"
 }}
 >
@@ -39,7 +58,7 @@ margin:"auto"
 <div
 style={{
 textAlign:"center",
-marginBottom:"45px"
+marginBottom:"35px"
 }}
 >
 
@@ -53,7 +72,6 @@ color:"#1F2937"
 Frequently Asked Questions
 </h2>
 
-
 <p
 style={{
 color:"#374151"
@@ -66,64 +84,115 @@ Pertanyaan umum mengenai layanan StudioIT.
 </div>
 
 
-
 <div
 style={{
 display:"grid",
-gap:"18px"
+gap:"12px"
 }}
 >
 
 
 {
-questions.map((question,index)=>(
-
-<motion.div
-
-key={question}
-
-initial={{
-opacity:0,
-y:20
-}}
-
-whileInView={{
-opacity:1,
-y:0
-}}
-
-transition={{
-delay:index*.1
-}}
-
-style={{
-padding:"22px",
-background:"#FFE8E8",
-borderRadius:"16px",
-fontFamily:"Inter"
-}}
-
->
-
-<strong
-style={{
-color:"#E63946"
-}}
->
-0{index+1}
-</strong>
-
+items.map((item,index)=>(
 
 <div
+key={item.q}
 style={{
-marginTop:"10px"
+border:"1px solid #FFE8E8",
+borderRadius:"12px",
+overflow:"hidden"
 }}
 >
-{question}
+
+
+<button
+
+onClick={()=>setOpen(open===index?null:index)}
+
+style={{
+
+width:"100%",
+
+padding:"16px 20px",
+
+background:"#FFFFFF",
+
+border:"none",
+
+display:"flex",
+
+justifyContent:"space-between",
+
+alignItems:"center",
+
+cursor:"pointer",
+
+fontFamily:"Inter",
+
+fontSize:"15px",
+
+textAlign:"left"
+
+}}
+
+>
+
+<span>
+{item.q}
+</span>
+
+
+<ChevronDown
+
+size={18}
+
+color="#E63946"
+
+style={{
+
+transform:
+open===index
+?"rotate(180deg)"
+:"rotate(0deg)",
+
+transition:"0.3s"
+
+}}
+
+/>
+
+
+</button>
+
+
+
+{
+open===index &&
+
+<div
+
+style={{
+
+padding:"0 20px 18px",
+
+color:"#374151",
+
+lineHeight:"1.7",
+
+fontSize:"14px"
+
+}}
+
+>
+
+{item.a}
+
 </div>
 
+}
 
-</motion.div>
+
+</div>
 
 ))
 
