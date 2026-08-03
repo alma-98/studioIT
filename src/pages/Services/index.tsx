@@ -112,9 +112,9 @@ StudioIT menyediakan solusi teknologi digital yang dirancang sesuai kebutuhan bi
 
 style={{
 display:"grid",
-gridTemplateColumns:"1fr",
 gap:"18px",
-marginTop:"0"
+marginTop:"0",
+justifyItems:"start"
 }}
 
 >
@@ -130,8 +130,9 @@ key={item.name}
 style={{
 
 background:"#FFFFFF",
-padding:"22px 24px",
-borderRadius:"18px",
+width:"280px",
+padding:"18px 20px",
+borderRadius:"16px",
 boxShadow:"0 10px 30px rgba(0,0,0,.08)",
 textAlign:"left"
 
