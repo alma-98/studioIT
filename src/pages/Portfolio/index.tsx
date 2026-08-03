@@ -69,7 +69,7 @@ return(
 style={{
 padding:"100px 24px",
 background:"#FFE8E8",
-textAlign:"center"
+textAlign:"left"
 }}
 
 >
@@ -77,7 +77,7 @@ textAlign:"center"
 
 <div
 style={{
-maxWidth:"1000px",
+maxWidth:"1200px",
 margin:"auto"
 }}
 >
@@ -348,7 +348,7 @@ Live Demo
 style={{
 padding:"80px 24px",
 background:"#FFE8E8",
-textAlign:"center"
+textAlign:"left"
 }}
 
 >
