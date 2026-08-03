@@ -11,6 +11,7 @@ import "./styles/utilities.css";
 import "./styles/breakpoints.css";
 import "./styles/animations.css";
 import "./styles/accessibility.css";
+import "./styles/print.css";
 
 import App from "./App";
 import { StudioThemeProvider } from "./theme";
