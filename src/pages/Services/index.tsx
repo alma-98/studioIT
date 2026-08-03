@@ -42,8 +42,9 @@ return (
 <section
 
 style={{
-padding:"35px 24px",
-background:"#FFE8E8"
+padding:"100px 24px",
+background:"#FFE8E8",
+textAlign:"left"
 }}
 
 >
@@ -55,8 +56,8 @@ maxWidth:"1200px",
 margin:"auto",
 display:"grid",
 gridTemplateColumns:"repeat(auto-fit,minmax(320px,1fr))",
-gap:"70px",
-alignItems:"center"
+gap:"60px",
+alignItems:"start"
 }}
 
 >
