@@ -165,7 +165,10 @@ color="#E63946"
 <h3
 
 style={{
-fontFamily:"Poppins"
+fontFamily:"Poppins",
+fontSize:"16px",
+fontWeight:600,
+margin:0
 }}
 
 >
