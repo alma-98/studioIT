@@ -140,26 +140,10 @@ textAlign:"left"
 
 >
 
-<div
-
-style={{
-width:"48px",
-height:"48px",
-borderRadius:"14px",
-background:"#FFE8E8",
-display:"flex",
-alignItems:"center",
-justifyContent:"center"
-}}
-
->
-
 <item.icon
 size={28}
 color="#E63946"
 />
-
-</div>
 
 
 <h3
