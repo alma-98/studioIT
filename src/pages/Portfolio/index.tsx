@@ -93,7 +93,8 @@ padding:"8px 18px",
 borderRadius:"30px",
 fontFamily:"Poppins",
 fontSize:"14px",
-fontWeight:600
+fontWeight:600,
+marginBottom:"24px"
 }}
 
 >
