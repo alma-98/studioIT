@@ -1,24 +1,495 @@
+
+import { motion } from "framer-motion";
+import {
+Globe,
+Smartphone,
+BrainCircuit,
+Building2,
+Settings
+} from "lucide-react";
+
+
 export default function Pricing(){
 
-return (
+
+const packages=[
+
+{
+title:"Starter Website",
+price:"Mulai Dari Rp 5 Juta",
+icon:Globe,
+desc:"Untuk bisnis kecil dan personal brand.",
+features:[
+"Landing Page Profesional",
+"Responsive Design",
+"Basic SEO Setup",
+"Contact Form",
+"Hosting Deployment"
+]
+},
+
+{
+title:"Business Website",
+price:"Mulai Dari Rp 15 Juta",
+icon:Globe,
+desc:"Untuk perusahaan yang membutuhkan website profesional.",
+features:[
+"Multi Page Website",
+"Custom UI/UX Design",
+"CMS Integration",
+"Analytics Setup",
+"Performance Optimization"
+]
+},
+
+{
+title:"Enterprise Solution",
+price:"Custom Quote",
+icon:Building2,
+desc:"Solusi digital dengan kebutuhan sistem kompleks.",
+features:[
+"Custom Web Application",
+"Database System",
+"API Integration",
+"Dashboard Analytics",
+"Cloud Infrastructure"
+]
+}
+
+]
+
+
+const solutions=[
+
+{
+title:"Mobile Application",
+desc:"Pengembangan aplikasi Android dan iOS sesuai kebutuhan bisnis.",
+icon:Smartphone
+},
+
+{
+title:"AI Solution",
+desc:"AI Assistant, Automation, Analytics, dan Intelligent System.",
+icon:BrainCircuit
+},
+
+{
+title:"Maintenance Support",
+desc:"Monitoring, update, keamanan, dan pengembangan fitur.",
+icon:Settings
+}
+
+]
+
+
+return(
+
+<div>
+
 
 <section
+
 style={{
-padding:"80px 24px",
+padding:"100px 24px",
+background:"#FFE8E8",
 textAlign:"center"
 }}
+
 >
 
-<h1>
-Pricing
+
+<h1
+
+style={{
+fontFamily:"Poppins",
+fontSize:"38px",
+color:"#1F2937"
+}}
+
+>
+
+Pricing StudioIT
+
 </h1>
 
-<p>
-StudioIT Pricing Page
+
+<p
+
+style={{
+maxWidth:"850px",
+margin:"25px auto",
+lineHeight:"1.8",
+color:"#374151"
+}}
+
+>
+
+Paket solusi digital fleksibel untuk membantu bisnis,
+startup, dan organisasi membangun teknologi modern.
+
 </p>
 
+
 </section>
+
+
+
+<section
+
+style={{
+padding:"90px 24px",
+background:"#FFFFFF"
+}}
+
+>
+
+
+<div
+
+style={{
+maxWidth:"1200px",
+margin:"auto",
+display:"grid",
+gridTemplateColumns:"repeat(auto-fit,minmax(300px,1fr))",
+gap:"30px"
+}}
+
+>
+
+
+{
+packages.map((item,index)=>{
+
+const Icon=item.icon;
+
+
+return(
+
+<motion.div
+
+key={item.title}
+
+whileHover={{
+y:-8
+}}
+
+initial={{
+opacity:0,
+y:30
+}}
+
+whileInView={{
+opacity:1,
+y:0
+}}
+
+transition={{
+delay:index*.1
+}}
+
+style={{
+padding:"35px",
+borderRadius:"22px",
+boxShadow:"0 15px 35px rgba(0,0,0,.08)",
+background:"#FFFFFF",
+textAlign:"center"
+}}
+
+>
+
+
+<div
+
+style={{
+width:"64px",
+height:"64px",
+borderRadius:"18px",
+background:"#FFE8E8",
+display:"flex",
+alignItems:"center",
+justifyContent:"center",
+margin:"auto"
+}}
+
+>
+
+<Icon
+size={32}
+color="#E63946"
+/>
+
+</div>
+
+
+
+<h2
+
+style={{
+fontFamily:"Poppins",
+fontSize:"22px",
+marginTop:"20px"
+}}
+
+>
+
+{item.title}
+
+</h2>
+
+
+
+<h3
+
+style={{
+color:"#E63946",
+fontFamily:"Poppins"
+}}
+
+>
+
+{item.price}
+
+</h3>
+
+
+
+<p
+style={{
+color:"#374151"
+}}
+>
+{item.desc}
+</p>
+
+
+
+<ul
+
+style={{
+textAlign:"left",
+lineHeight:"2",
+paddingLeft:"20px"
+}}
+
+>
+
+{
+item.features.map(feature=>(
+
+<li key={feature}>
+{feature}
+</li>
+
+))
+
+}
+
+</ul>
+
+
+
+<a
+
+href="mailto:alma.budsteddy88@gmail.com"
+
+style={{
+textDecoration:"none"
+}}
+
+>
+
+<button
+
+style={{
+background:"#E63946",
+color:"#FFFFFF",
+border:"none",
+padding:"12px 24px",
+borderRadius:"12px",
+cursor:"pointer"
+}}
+
+>
+
+Konsultasi Project
+
+</button>
+
+
+</a>
+
+
+</motion.div>
+
+)
+
+})
+
+}
+
+
+</div>
+
+
+</section>
+
+
+
+<section
+
+style={{
+padding:"80px 24px",
+background:"#FFE8E8"
+}}
+
+>
+
+
+<div
+
+style={{
+maxWidth:"1000px",
+margin:"auto",
+textAlign:"center"
+}}
+
+>
+
+
+<h2
+
+style={{
+fontFamily:"Poppins"
+}}
+
+>
+
+Solusi Teknologi Lainnya
+
+</h2>
+
+
+
+<div
+
+style={{
+display:"grid",
+gridTemplateColumns:"repeat(auto-fit,minmax(250px,1fr))",
+gap:"20px",
+marginTop:"30px"
+}}
+
+>
+
+
+{
+solutions.map(item=>{
+
+const Icon=item.icon;
+
+
+return(
+
+<div
+
+key={item.title}
+
+style={{
+background:"#FFFFFF",
+padding:"25px",
+borderRadius:"18px",
+textAlign:"center"
+}}
+
+>
+
+<Icon
+size={30}
+color="#E63946"
+/>
+
+
+<h3>
+{item.title}
+</h3>
+
+
+<p>
+{item.desc}
+</p>
+
+
+</div>
+
+)
+
+})
+
+}
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<section
+
+style={{
+padding:"70px 24px",
+textAlign:"center"
+}}
+
+>
+
+<h2
+style={{
+fontFamily:"Poppins"
+}}
+>
+Siap Memulai Project Digital?
+</h2>
+
+
+<p>
+Diskusikan kebutuhan teknologi Anda bersama StudioIT.
+</p>
+
+
+<a
+href="mailto:alma.budsteddy88@gmail.com"
+>
+
+<button
+
+style={{
+background:"#E63946",
+color:"#FFFFFF",
+border:"none",
+padding:"14px 30px",
+borderRadius:"14px"
+}}
+
+>
+
+Konsultasi Project
+
+</button>
+
+</a>
+
+
+</section>
+
+
+</div>
 
 )
 
 }
+
