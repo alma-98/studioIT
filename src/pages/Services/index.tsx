@@ -186,7 +186,7 @@ y:-8
 
 style={{
 background:"#FFFFFF",
-width:"280px",
+width:"220px",
 padding:"12px 18px",
 borderRadius:"12px",
 display:"flex",
