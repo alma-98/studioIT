@@ -88,8 +88,8 @@ display:"inline-block",
 background:"#E63946",
 color:"#FFFFFF",
 padding:"8px 18px",
-borderRadius:"20px",
-marginBottom:"12px",
+borderRadius:"30px",
+marginBottom:"24px",
 fontFamily:"Poppins",
 fontSize:"14px",
 fontWeight:600
@@ -107,16 +107,14 @@ Layanan Kami
 
 style={{
 fontFamily:"Poppins",
-fontSize:"38px",
+fontSize:"32px",
 lineHeight:"1.2",
 color:"#1F2937"
 }}
 
 >
 
-Solusi Teknologi Digital
-<br/>
-Untuk Kebutuhan Bisnis
+Solusi Teknologi Digital Untuk Kebutuhan Bisnis
 
 </h1>
 
@@ -126,7 +124,7 @@ Untuk Kebutuhan Bisnis
 
 style={{
 fontFamily:"Inter",
-fontSize:"16px",
+fontSize:"17px",
 lineHeight:"1.8",
 color:"#374151",
 textAlign:"left"
