@@ -14,7 +14,7 @@ return (
 <div
 style={{
 minHeight:"100vh",
-background:"#FFE8E8"
+background:"#FFFFFF"
 }}
 >
 
