@@ -127,7 +127,6 @@ services.map(item=>(
 <div
 
 key={item.name}
-
 style={{
 
 background:"#FFE8E8",
@@ -156,7 +155,7 @@ margin:"0 auto 20px"
 >
 
 <item.icon
-size={30}
+size={28}
 color="#E63946"
 />
 
