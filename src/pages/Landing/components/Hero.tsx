@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import { ArrowRight, Code2 } from "lucide-react";
+import { Code2 } from "lucide-react";
 
 
 export default function Hero(){
@@ -71,14 +71,10 @@ padding:"14px 28px",
 borderRadius:"12px",
 cursor:"pointer",
 display:"inline-flex",
-alignItems:"center",
-gap:"8px"
-}}
+alignItems:"center",}}
 >
 
 Konsultasi Project
-
-<ArrowRight size={18}/>
 
 </button>
 
