@@ -157,7 +157,7 @@ textAlign:"left"
 >
 
 <item.icon
-size={28}
+size={20}
 color="#E63946"
 />
 
