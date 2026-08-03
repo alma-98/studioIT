@@ -40,7 +40,7 @@ return (
 <section
 
 style={{
-padding:"90px 24px",
+padding:"60px 24px",
 background:"#FFE8E8"
 }}
 
@@ -88,7 +88,7 @@ Layanan Kami
 
 style={{
 fontFamily:"Poppins",
-fontSize:"42px",
+fontSize:"38px",
 lineHeight:"1.2",
 color:"#1F2937"
 }}
@@ -115,10 +115,9 @@ textAlign:"left"
 
 >
 
-StudioIT menyediakan layanan pengembangan teknologi
-mulai dari website, aplikasi mobile, AI, sistem enterprise,
-hingga cloud infrastructure untuk membantu bisnis
-melakukan transformasi digital.
+StudioIT menyediakan solusi teknologi digital yang membantu perusahaan, UMKM, dan startup melakukan transformasi bisnis melalui pengembangan software, aplikasi mobile, artificial intelligence, sistem enterprise, dan cloud infrastructure.
+
+Dengan pendekatan teknologi modern dan scalable, StudioIT membantu membangun sistem digital yang lebih efisien, terintegrasi, dan siap mendukung pertumbuhan bisnis di era digital.
 
 </p>
 
