@@ -69,9 +69,9 @@ fontFamily:"Inter",
 fontSize:"16px",
 lineHeight:"1.8",
 color:"#374151",
-textAlign:"center",
+textAlign:"left",
 maxWidth:"800px",
-margin:"20px auto"
+margin:"20px 0"
 }}
 
 >
