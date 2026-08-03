@@ -474,53 +474,7 @@ color="#E63946"
 
 
 
-<section
 
-style={{
-padding:"70px 24px",
-textAlign:"center"
-}}
-
->
-
-<h2
-style={{
-fontFamily:"Poppins"
-}}
->
-Siap Memulai Project Digital?
-</h2>
-
-
-<p>
-Diskusikan kebutuhan teknologi Anda bersama StudioIT.
-</p>
-
-
-<a
-href="mailto:alma.budsteddy88@gmail.com"
->
-
-<button
-
-style={{
-background:"#E63946",
-color:"#FFFFFF",
-border:"none",
-padding:"14px 30px",
-borderRadius:"14px"
-}}
-
->
-
-Konsultasi Project
-
-</button>
-
-</a>
-
-
-</section>
 
 
 </div>

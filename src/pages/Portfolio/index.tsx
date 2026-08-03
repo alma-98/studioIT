@@ -341,71 +341,7 @@ Live Demo
 
 
 
-<section
 
-style={{
-padding:"80px 24px",
-background:"#FFE8E8",
-textAlign:"left"
-}}
-
->
-
-
-<h2
-style={{
-fontFamily:"Poppins"
-}}
->
-
-Punya Ide Project Digital?
-
-</h2>
-
-
-<p
-style={{
-color:"#374151"
-}}
->
-
-Mari bangun solusi teknologi bersama StudioIT.
-
-</p>
-
-
-<a
-
-href="mailto:alma.budsteddy88@gmail.com"
-
-style={{
-textDecoration:"none"
-}}
-
->
-
-<button
-
-style={{
-background:"#E63946",
-color:"#FFFFFF",
-border:"none",
-padding:"14px 28px",
-borderRadius:"14px",
-fontFamily:"Poppins",
-cursor:"pointer"
-}}
-
->
-
-Konsultasi Project
-
-</button>
-
-</a>
-
-
-</section>
 
 
 </div>
