@@ -7,6 +7,7 @@ import WhyChooseUs from "./components/WhyChooseUs";
 import PortfolioPreview from "./components/PortfolioPreview";
 import Technology from "./components/Technology";
 import Process from "./components/Process";
+import Testimonial from "./components/Testimonial";
 import FAQ from "./components/FAQ";
 import CTA from "./components/CTA";
 
@@ -34,6 +35,7 @@ return(
 
 <Process/>
 
+<Testimonial/>
 
 <FAQ/>
 
@@ -44,3 +46,4 @@ return(
 )
 
 }
+
