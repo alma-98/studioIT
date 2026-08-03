@@ -1,0 +1,1002 @@
+========================================
+StudioIT Master Architecture Report
+========================================
+
+Generated : Mon Aug  3 20:47:26 WIB 2026
+
+========================================
+PROJECT ROOT
+========================================
+.
+./.firebase
+./.firebase/hosting.ZGlzdA.cache
+./.firebaserc
+./.git
+./.git/COMMIT_EDITMSG
+./.git/FETCH_HEAD
+./.git/HEAD
+./.git/ORIG_HEAD
+./.git/config
+./.git/description
+./.git/hooks
+./.git/index
+./.git/info
+./.git/logs
+./.git/objects
+./.git/refs
+./.gitignore
+./README.md
+./audit
+./audit-project.sh
+./audit/FOLDER_ARCHITECTURE_006.txt
+./audit/MASTER_ARCHITECTURE_REPORT.txt
+./audit/PROJECT_AUDIT.md
+./audit/PROJECT_AUDIT_005C.txt
+./audit/UTILITY_VALIDATION_005C8.txt
+./audit/firebase.json
+./audit/package.json
+./audit/src_App.tsx
+./audit/src_main.tsx
+./audit/src_styles_colors.css
+./audit/src_styles_global.css
+./audit/src_styles_theme.css
+./audit/src_styles_typography.css
+./audit/src_styles_variables.css
+./audit/src_theme_colors.ts
+./audit/src_theme_index.ts
+./audit/src_theme_palette.ts
+./audit/src_theme_semantic.ts
+./audit/src_theme_typography.ts
+./audit/vite.config.ts
+./backup
+./backup/main.tsx.20260803_204527
+./dist
+./dist/.gitkeep
+./dist/assets
+./dist/favicon.svg
+./dist/icons
+./dist/icons.svg
+./dist/images
+./dist/index.html
+./eslint.config.js
+./firebase.json
+./fix-theme-css.sh
+./index.html
+./node_modules
+./node_modules/.bin
+./node_modules/.package-lock.json
+./node_modules/.tmp
+./node_modules/.vite
+./node_modules/.vite-temp
+./node_modules/@babel
+./node_modules/@emnapi
+./node_modules/@eslint
+./node_modules/@eslint-community
+./node_modules/@firebase
+./node_modules/@grpc
+./node_modules/@humanfs
+./node_modules/@humanwhocodes
+./node_modules/@jridgewell
+./node_modules/@napi-rs
+./node_modules/@oxc-project
+./node_modules/@protobufjs
+./node_modules/@rolldown
+./node_modules/@tailwindcss
+./node_modules/@tybys
+./node_modules/@types
+./node_modules/@typescript-eslint
+./node_modules/@ungap
+./node_modules/@vitejs
+./node_modules/acorn
+./node_modules/acorn-jsx
+./node_modules/ajv
+./node_modules/ansi-regex
+./node_modules/ansi-styles
+./node_modules/attr-accept
+./node_modules/bail
+./node_modules/balanced-match
+./node_modules/baseline-browser-mapping
+./node_modules/brace-expansion
+./node_modules/browserslist
+./node_modules/caniuse-lite
+./node_modules/ccount
+./node_modules/character-entities
+./node_modules/character-entities-html4
+./node_modules/character-entities-legacy
+./node_modules/character-reference-invalid
+./node_modules/cliui
+./node_modules/color-convert
+./node_modules/color-name
+./node_modules/comma-separated-tokens
+./node_modules/convert-source-map
+./node_modules/cookie
+./node_modules/cross-spawn
+./node_modules/csstype
+./node_modules/debug
+./node_modules/decode-named-character-reference
+./node_modules/deep-is
+./node_modules/dequal
+./node_modules/detect-libc
+./node_modules/devlop
+./node_modules/electron-to-chromium
+./node_modules/emoji-regex
+./node_modules/enhanced-resolve
+./node_modules/escalade
+./node_modules/escape-string-regexp
+./node_modules/eslint
+./node_modules/eslint-plugin-react-hooks
+./node_modules/eslint-plugin-react-refresh
+./node_modules/eslint-scope
+./node_modules/eslint-visitor-keys
+./node_modules/espree
+./node_modules/esquery
+./node_modules/esrecurse
+./node_modules/estraverse
+./node_modules/estree-util-is-identifier-name
+./node_modules/esutils
+./node_modules/extend
+./node_modules/fast-deep-equal
+./node_modules/fast-json-stable-stringify
+./node_modules/fast-levenshtein
+./node_modules/faye-websocket
+./node_modules/fdir
+./node_modules/file-entry-cache
+./node_modules/file-selector
+./node_modules/find-up
+./node_modules/firebase
+./node_modules/flat-cache
+./node_modules/flatted
+./node_modules/framer-motion
+./node_modules/fsevents
+./node_modules/gensync
+./node_modules/get-caller-file
+./node_modules/glob-parent
+./node_modules/globals
+./node_modules/goober
+./node_modules/graceful-fs
+./node_modules/hast-util-to-jsx-runtime
+./node_modules/hast-util-whitespace
+./node_modules/hermes-estree
+./node_modules/hermes-parser
+./node_modules/html-url-attributes
+./node_modules/http-parser-js
+./node_modules/idb
+./node_modules/ignore
+./node_modules/imurmurhash
+./node_modules/inline-style-parser
+./node_modules/is-alphabetical
+./node_modules/is-alphanumerical
+./node_modules/is-decimal
+./node_modules/is-extglob
+./node_modules/is-fullwidth-code-point
+./node_modules/is-glob
+./node_modules/is-hexadecimal
+./node_modules/is-plain-obj
+./node_modules/isexe
+./node_modules/jiti
+./node_modules/js-tokens
+./node_modules/jsesc
+./node_modules/json-buffer
+./node_modules/json-schema-traverse
+./node_modules/json-stable-stringify-without-jsonify
+./node_modules/json5
+./node_modules/keyv
+./node_modules/levn
+./node_modules/lightningcss
+./node_modules/lightningcss-darwin-x64
+./node_modules/locate-path
+./node_modules/lodash.camelcase
+./node_modules/long
+./node_modules/longest-streak
+./node_modules/lru-cache
+./node_modules/lucide-react
+./node_modules/magic-string
+./node_modules/mdast-util-from-markdown
+./node_modules/mdast-util-mdx-expression
+./node_modules/mdast-util-mdx-jsx
+./node_modules/mdast-util-mdxjs-esm
+./node_modules/mdast-util-phrasing
+./node_modules/mdast-util-to-hast
+./node_modules/mdast-util-to-markdown
+./node_modules/mdast-util-to-string
+./node_modules/micromark
+./node_modules/micromark-core-commonmark
+./node_modules/micromark-factory-destination
+./node_modules/micromark-factory-label
+./node_modules/micromark-factory-space
+./node_modules/micromark-factory-title
+./node_modules/micromark-factory-whitespace
+./node_modules/micromark-util-character
+./node_modules/micromark-util-chunked
+./node_modules/micromark-util-classify-character
+./node_modules/micromark-util-combine-extensions
+./node_modules/micromark-util-decode-numeric-character-reference
+./node_modules/micromark-util-decode-string
+./node_modules/micromark-util-encode
+./node_modules/micromark-util-html-tag-name
+./node_modules/micromark-util-normalize-identifier
+./node_modules/micromark-util-resolve-all
+./node_modules/micromark-util-sanitize-uri
+./node_modules/micromark-util-subtokenize
+./node_modules/micromark-util-symbol
+./node_modules/micromark-util-types
+./node_modules/minimatch
+./node_modules/motion-dom
+./node_modules/motion-utils
+./node_modules/ms
+./node_modules/nanoid
+./node_modules/natural-compare
+./node_modules/node-releases
+./node_modules/optionator
+./node_modules/p-limit
+./node_modules/p-locate
+./node_modules/parse-entities
+./node_modules/path-exists
+./node_modules/path-key
+./node_modules/picocolors
+./node_modules/picomatch
+./node_modules/postcss
+./node_modules/prelude-ls
+./node_modules/property-information
+./node_modules/protobufjs
+./node_modules/punycode
+./node_modules/re2js
+./node_modules/react
+./node_modules/react-dom
+./node_modules/react-dropzone
+./node_modules/react-hook-form
+./node_modules/react-hot-toast
+./node_modules/react-markdown
+./node_modules/react-router
+./node_modules/react-router-dom
+./node_modules/remark-parse
+./node_modules/remark-rehype
+./node_modules/require-directory
+./node_modules/rolldown
+./node_modules/safe-buffer
+./node_modules/scheduler
+./node_modules/semver
+./node_modules/set-cookie-parser
+./node_modules/shebang-command
+./node_modules/shebang-regex
+./node_modules/source-map-js
+./node_modules/space-separated-tokens
+./node_modules/string-width
+./node_modules/stringify-entities
+./node_modules/strip-ansi
+./node_modules/style-to-js
+./node_modules/style-to-object
+./node_modules/tailwindcss
+./node_modules/tapable
+./node_modules/tinyglobby
+./node_modules/trim-lines
+./node_modules/trough
+./node_modules/ts-api-utils
+./node_modules/tslib
+./node_modules/type-check
+./node_modules/typescript
+./node_modules/typescript-eslint
+./node_modules/undici-types
+./node_modules/unified
+./node_modules/unist-util-is
+./node_modules/unist-util-position
+./node_modules/unist-util-stringify-position
+./node_modules/unist-util-visit
+./node_modules/unist-util-visit-parents
+./node_modules/update-browserslist-db
+./node_modules/uri-js
+./node_modules/vfile
+./node_modules/vfile-message
+./node_modules/vite
+./node_modules/web-vitals
+./node_modules/websocket-driver
+./node_modules/websocket-extensions
+./node_modules/which
+./node_modules/word-wrap
+./node_modules/wrap-ansi
+./node_modules/y18n
+./node_modules/yallist
+./node_modules/yargs
+./node_modules/yargs-parser
+./node_modules/yocto-queue
+./node_modules/zod
+./node_modules/zod-validation-error
+./node_modules/zwitch
+./package-lock.json
+./package.json
+./part-001-foundation.sh
+./part-002a-design-system.sh
+./part-002b-ui-components.sh
+./part-002c-theme-provider.sh
+./part-003-color-theme.sh
+./part-004-typography.sh
+./part-005a-global-css-reset.sh
+./part-005b1-layout-foundation.sh
+./part-005b2-flex-system.sh
+./part-005b3a-grid-system.sh
+./part-005b3b-autogrid-center.sh
+./part-005b3c-spacer-masonry.sh
+./part-005b4a-page-main.sh
+./part-005b4b-content-sidebar.sh
+./part-005b4c-wrapper-shell.sh
+./part-005b4d1-layout-final.sh
+./part-005b4d2-validation.sh
+./part-005c1a-display-utility.sh
+./part-005c1b-validation.sh
+./part-005c2a1-margin-utility.sh
+./part-005c2a2-margin-validation.sh
+./part-005c2b1-padding-utility.sh
+./part-005c2b2-padding-validation.sh
+./part-005c2c-gap-utility.sh
+./part-005c2d-final-spacing-validation.sh
+./part-005c3-typography-utility.sh
+./part-005c4-color-utility.sh
+./part-005c5-border-utility.sh
+./part-005c6-radius-utility.sh
+./part-005c7-shadow-utility.sh
+./part-005c8-utility-validation.sh
+./part-005d1-breakpoint-utility.sh
+./part-005d2-animation-utility.sh
+./part-005d3-accessibility-utility.sh
+./part-005d4-print-utility.sh
+./part-006-folder-architecture.sh
+./part-0071-react-router-activation.sh
+./part-0072-master-architecture-audit.sh
+./public
+./public/.gitkeep
+./public/favicon.svg
+./public/icons
+./public/icons.svg
+./public/images
+./src
+./src/.gitkeep
+./src/App.css
+./src/App.tsx
+./src/README.md
+./src/__tests__
+./src/api
+./src/assets
+./src/components
+./src/config
+./src/constants
+./src/context
+./src/data
+./src/firebase
+./src/guards
+./src/hooks
+./src/index.css
+./src/interfaces
+./src/layout
+./src/layouts
+./src/lib
+./src/main.tsx
+./src/mocks
+./src/models
+./src/pages
+./src/providers
+./src/router
+./src/routes
+./src/scripts
+./src/services
+./src/store
+./src/styles
+./src/tests
+./src/theme
+./src/types
+./src/utils
+./tsconfig.app.json
+./tsconfig.json
+./tsconfig.node.json
+./vite.config.ts
+
+========================================
+SRC STRUCTURE
+========================================
+src
+src/.gitkeep
+src/App.css
+src/App.tsx
+src/README.md
+src/__tests__
+src/__tests__/.gitkeep
+src/api
+src/api/.gitkeep
+src/assets
+src/assets/.gitkeep
+src/assets/fonts
+src/assets/fonts/.gitkeep
+src/assets/hero.png
+src/assets/icons
+src/assets/icons/.gitkeep
+src/assets/images
+src/assets/images/.gitkeep
+src/assets/react.svg
+src/assets/vite.svg
+src/components
+src/components/.gitkeep
+src/components/cards
+src/components/cards/.gitkeep
+src/components/chat
+src/components/chat/.gitkeep
+src/components/chat/AIChat.tsx
+src/components/common
+src/components/common/.gitkeep
+src/components/forms
+src/components/forms/.gitkeep
+src/components/home
+src/components/home/.gitkeep
+src/components/home/FAQ.tsx
+src/components/home/Hero.tsx
+src/components/home/Portfolio.tsx
+src/components/home/Pricing.tsx
+src/components/home/Services.tsx
+src/components/home/Testimonial.tsx
+src/components/layout
+src/components/layout/.gitkeep
+src/components/layout/Footer.tsx
+src/components/layout/Navbar.tsx
+src/components/modals
+src/components/modals/.gitkeep
+src/components/navigation
+src/components/navigation/.gitkeep
+src/components/sms
+src/components/sms/.gitkeep
+src/components/sms/FloatingSMS.tsx
+src/components/sms/PopupSMS.tsx
+src/components/tables
+src/components/tables/.gitkeep
+src/components/ui
+src/components/ui/.gitkeep
+src/components/ui/Badge.tsx
+src/components/ui/Button.tsx
+src/components/ui/Card.tsx
+src/components/ui/Container.tsx
+src/components/ui/Flex.tsx
+src/components/ui/Grid.tsx
+src/components/ui/Heading.tsx
+src/components/ui/Input.tsx
+src/components/ui/Section.tsx
+src/components/ui/Select.tsx
+src/components/ui/Text.tsx
+src/components/ui/Textarea.tsx
+src/components/ui/index.ts
+src/config
+src/config/.gitkeep
+src/constants
+src/constants/.gitkeep
+src/constants/theme.ts
+src/context
+src/context/.gitkeep
+src/context/ThemeContext.tsx
+src/data
+src/data/.gitkeep
+src/firebase
+src/firebase/.gitkeep
+src/firebase/firebase.ts
+src/guards
+src/guards/.gitkeep
+src/hooks
+src/hooks/.gitkeep
+src/index.css
+src/interfaces
+src/interfaces/.gitkeep
+src/layout
+src/layout/.gitkeep
+src/layout/AutoGrid.tsx
+src/layout/Center.tsx
+src/layout/Column.tsx
+src/layout/Container.tsx
+src/layout/Content.tsx
+src/layout/Flex.tsx
+src/layout/Grid.tsx
+src/layout/Main.tsx
+src/layout/MainLayout.tsx
+src/layout/Masonry.tsx
+src/layout/MasonryItem.tsx
+src/layout/Page.tsx
+src/layout/README.md
+src/layout/Row.tsx
+src/layout/Section.tsx
+src/layout/Shell.tsx
+src/layout/Sidebar.tsx
+src/layout/Spacer.tsx
+src/layout/Stack.tsx
+src/layout/Wrapper.tsx
+src/layout/index.ts
+src/layouts
+src/layouts/.gitkeep
+src/layouts/MainLayout.tsx
+src/lib
+src/lib/.gitkeep
+src/main.tsx
+src/mocks
+src/mocks/.gitkeep
+src/models
+src/models/.gitkeep
+src/pages
+src/pages/.gitkeep
+src/pages/About
+src/pages/About/.gitkeep
+src/pages/About/index.tsx
+src/pages/Admin
+src/pages/Admin/.gitkeep
+src/pages/Admin/index.tsx
+src/pages/Blog
+src/pages/Blog/.gitkeep
+src/pages/Contact
+src/pages/Contact/.gitkeep
+src/pages/Contact/index.tsx
+src/pages/Dashboard
+src/pages/Dashboard/.gitkeep
+src/pages/Dashboard/index.tsx
+src/pages/FAQ
+src/pages/FAQ/.gitkeep
+src/pages/FAQ/index.tsx
+src/pages/Home
+src/pages/Home/.gitkeep
+src/pages/Home/index.tsx
+src/pages/Login
+src/pages/Login/.gitkeep
+src/pages/Login/index.tsx
+src/pages/Order
+src/pages/Order/.gitkeep
+src/pages/Order/index.tsx
+src/pages/Portfolio
+src/pages/Portfolio/.gitkeep
+src/pages/Portfolio/index.tsx
+src/pages/Pricing
+src/pages/Pricing/.gitkeep
+src/pages/Pricing/index.tsx
+src/pages/Register
+src/pages/Register/.gitkeep
+src/pages/Register/index.tsx
+src/pages/Services
+src/pages/Services/.gitkeep
+src/pages/Services/index.tsx
+src/providers
+src/providers/.gitkeep
+src/router
+src/router/.gitkeep
+src/router/AppRouter.tsx
+src/routes
+src/routes/.gitkeep
+src/routes/AppRouter.tsx
+src/scripts
+src/scripts/.gitkeep
+src/services
+src/services/.gitkeep
+src/services/firebaseService.ts
+src/store
+src/store/.gitkeep
+src/styles
+src/styles/.gitkeep
+src/styles/accessibility.css
+src/styles/animations.css
+src/styles/breakpoints.css
+src/styles/colors.css
+src/styles/global.css
+src/styles/layout.css
+src/styles/print.css
+src/styles/theme.css
+src/styles/typography.css
+src/styles/utilities.css
+src/styles/variables.css
+src/tests
+src/tests/.gitkeep
+src/theme
+src/theme/.gitkeep
+src/theme/breakpoints.ts
+src/theme/colors.ts
+src/theme/index.ts
+src/theme/palette.ts
+src/theme/provider.tsx
+src/theme/radius.ts
+src/theme/semantic.ts
+src/theme/shadow.ts
+src/theme/spacing.ts
+src/theme/typography.ts
+src/types
+src/types/.gitkeep
+src/utils
+src/utils/.gitkeep
+src/utils/constants.ts
+
+========================================
+ROUTER
+========================================
+src/router/.gitkeep
+src/router/AppRouter.tsx
+src/routes/.gitkeep
+src/routes/AppRouter.tsx
+
+========================================
+LAYOUT
+========================================
+src/layout/.gitkeep
+src/layout/AutoGrid.tsx
+src/layout/Center.tsx
+src/layout/Column.tsx
+src/layout/Container.tsx
+src/layout/Content.tsx
+src/layout/Flex.tsx
+src/layout/Grid.tsx
+src/layout/Main.tsx
+src/layout/MainLayout.tsx
+src/layout/Masonry.tsx
+src/layout/MasonryItem.tsx
+src/layout/Page.tsx
+src/layout/README.md
+src/layout/Row.tsx
+src/layout/Section.tsx
+src/layout/Shell.tsx
+src/layout/Sidebar.tsx
+src/layout/Spacer.tsx
+src/layout/Stack.tsx
+src/layout/Wrapper.tsx
+src/layout/index.ts
+src/layouts/.gitkeep
+src/layouts/MainLayout.tsx
+
+========================================
+PAGES
+========================================
+src/pages/.gitkeep
+src/pages/About/.gitkeep
+src/pages/About/index.tsx
+src/pages/Admin/.gitkeep
+src/pages/Admin/index.tsx
+src/pages/Blog/.gitkeep
+src/pages/Contact/.gitkeep
+src/pages/Contact/index.tsx
+src/pages/Dashboard/.gitkeep
+src/pages/Dashboard/index.tsx
+src/pages/FAQ/.gitkeep
+src/pages/FAQ/index.tsx
+src/pages/Home/.gitkeep
+src/pages/Home/index.tsx
+src/pages/Login/.gitkeep
+src/pages/Login/index.tsx
+src/pages/Order/.gitkeep
+src/pages/Order/index.tsx
+src/pages/Portfolio/.gitkeep
+src/pages/Portfolio/index.tsx
+src/pages/Pricing/.gitkeep
+src/pages/Pricing/index.tsx
+src/pages/Register/.gitkeep
+src/pages/Register/index.tsx
+src/pages/Services/.gitkeep
+src/pages/Services/index.tsx
+
+========================================
+COMPONENTS
+========================================
+src/components/.gitkeep
+src/components/cards/.gitkeep
+src/components/chat/.gitkeep
+src/components/chat/AIChat.tsx
+src/components/common/.gitkeep
+src/components/forms/.gitkeep
+src/components/home/.gitkeep
+src/components/home/FAQ.tsx
+src/components/home/Hero.tsx
+src/components/home/Portfolio.tsx
+src/components/home/Pricing.tsx
+src/components/home/Services.tsx
+src/components/home/Testimonial.tsx
+src/components/layout/.gitkeep
+src/components/layout/Footer.tsx
+src/components/layout/Navbar.tsx
+src/components/modals/.gitkeep
+src/components/navigation/.gitkeep
+src/components/sms/.gitkeep
+src/components/sms/FloatingSMS.tsx
+src/components/sms/PopupSMS.tsx
+src/components/tables/.gitkeep
+src/components/ui/.gitkeep
+src/components/ui/Badge.tsx
+src/components/ui/Button.tsx
+src/components/ui/Card.tsx
+src/components/ui/Container.tsx
+src/components/ui/Flex.tsx
+src/components/ui/Grid.tsx
+src/components/ui/Heading.tsx
+src/components/ui/Input.tsx
+src/components/ui/Section.tsx
+src/components/ui/Select.tsx
+src/components/ui/Text.tsx
+src/components/ui/Textarea.tsx
+src/components/ui/index.ts
+
+========================================
+STYLES
+========================================
+src/styles/.gitkeep
+src/styles/accessibility.css
+src/styles/animations.css
+src/styles/breakpoints.css
+src/styles/colors.css
+src/styles/global.css
+src/styles/layout.css
+src/styles/print.css
+src/styles/theme.css
+src/styles/typography.css
+src/styles/utilities.css
+src/styles/variables.css
+
+========================================
+THEME
+========================================
+src/theme/.gitkeep
+src/theme/breakpoints.ts
+src/theme/colors.ts
+src/theme/index.ts
+src/theme/palette.ts
+src/theme/provider.tsx
+src/theme/radius.ts
+src/theme/semantic.ts
+src/theme/shadow.ts
+src/theme/spacing.ts
+src/theme/typography.ts
+
+========================================
+FIREBASE
+========================================
+{
+  "hosting": {
+    "target": "live",
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
+{
+  "projects": {
+    "default": "studioit-f2230"
+  },
+  "targets": {
+    "studioit-f2230": {
+      "hosting": {
+        "live": [
+          "studioit"
+        ]
+      }
+    }
+  }
+}
+
+========================================
+PACKAGE
+========================================
+{
+  "name": "studioit",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "deploy": "npm run build && firebase deploy --only hosting",
+    "publish": "npm run push && npm run deploy",
+    "push": "git add . && git commit -m \"Update\" && git push",
+    "clean": "rm -rf dist",
+    "rebuild": "npm run clean && npm run build"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "firebase": "^12.17.0",
+    "framer-motion": "^12.43.0",
+    "lucide-react": "^1.28.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-dropzone": "^19.2.0",
+    "react-hook-form": "^7.84.0",
+    "react-hot-toast": "^2.6.0",
+    "react-markdown": "^10.1.0",
+    "react-router-dom": "^7.18.2",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.4",
+    "eslint": "^10.8.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.3",
+    "globals": "^17.7.0",
+    "typescript": "~6.0.2",
+    "typescript-eslint": "^8.65.0",
+    "vite": "^8.2.0"
+  }
+}
+
+========================================
+MAIN ENTRY
+========================================
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+
+import "./styles/global.css";
+import "./styles/variables.css";
+import "./styles/colors.css";
+import "./styles/theme.css";
+import "./styles/typography.css";
+import "./styles/layout.css";
+import "./styles/utilities.css";
+import "./styles/breakpoints.css";
+import "./styles/animations.css";
+import "./styles/accessibility.css";
+import "./styles/print.css";
+
+import AppRouter from "./routes/AppRouter";
+import { StudioThemeProvider } from "./theme";
+
+createRoot(
+  document.getElementById("root")!
+).render(
+  <StrictMode>
+    <StudioThemeProvider>
+      <AppRouter />
+    </StudioThemeProvider>
+  </StrictMode>
+);
+
+========================================
+APP
+========================================
+import AppRouter from "./routes/AppRouter";
+
+export default function App() {
+  return <AppRouter />;
+}
+
+========================================
+EMPTY FILES
+========================================
+src/mocks/.gitkeep
+src/types/.gitkeep
+src/context/.gitkeep
+src/config/.gitkeep
+src/layout/.gitkeep
+src/layout/MainLayout.tsx
+src/constants/.gitkeep
+src/providers/.gitkeep
+src/.gitkeep
+src/tests/.gitkeep
+src/utils/.gitkeep
+src/models/.gitkeep
+src/styles/.gitkeep
+src/components/ui/.gitkeep
+src/components/home/Hero.tsx
+src/components/home/Pricing.tsx
+src/components/home/Testimonial.tsx
+src/components/home/.gitkeep
+src/components/home/Services.tsx
+src/components/home/Portfolio.tsx
+src/components/home/FAQ.tsx
+src/components/tables/.gitkeep
+src/components/forms/.gitkeep
+src/components/chat/.gitkeep
+src/components/chat/AIChat.tsx
+src/components/sms/FloatingSMS.tsx
+src/components/sms/.gitkeep
+src/components/sms/PopupSMS.tsx
+src/components/layout/Navbar.tsx
+src/components/layout/.gitkeep
+src/components/layout/Footer.tsx
+src/components/cards/.gitkeep
+src/components/.gitkeep
+src/components/navigation/.gitkeep
+src/components/modals/.gitkeep
+src/components/common/.gitkeep
+src/firebase/.gitkeep
+src/__tests__/.gitkeep
+src/layouts/.gitkeep
+src/theme/.gitkeep
+src/hooks/.gitkeep
+src/scripts/.gitkeep
+src/lib/.gitkeep
+src/api/.gitkeep
+src/data/.gitkeep
+src/assets/images/.gitkeep
+src/assets/.gitkeep
+src/assets/icons/.gitkeep
+src/assets/fonts/.gitkeep
+src/pages/Order/index.tsx
+src/pages/Order/.gitkeep
+src/pages/Home/.gitkeep
+src/pages/Contact/index.tsx
+src/pages/Contact/.gitkeep
+src/pages/FAQ/index.tsx
+src/pages/FAQ/.gitkeep
+src/pages/.gitkeep
+src/pages/Admin/index.tsx
+src/pages/Admin/.gitkeep
+src/pages/About/index.tsx
+src/pages/About/.gitkeep
+src/pages/Blog/.gitkeep
+src/pages/Dashboard/index.tsx
+src/pages/Dashboard/.gitkeep
+src/pages/Register/index.tsx
+src/pages/Register/.gitkeep
+src/pages/Portfolio/index.tsx
+src/pages/Portfolio/.gitkeep
+src/pages/Pricing/index.tsx
+src/pages/Pricing/.gitkeep
+src/pages/Login/index.tsx
+src/pages/Login/.gitkeep
+src/pages/Services/index.tsx
+src/pages/Services/.gitkeep
+src/routes/.gitkeep
+src/services/.gitkeep
+src/services/firebaseService.ts
+src/guards/.gitkeep
+src/interfaces/.gitkeep
+src/store/.gitkeep
+src/router/.gitkeep
+src/router/AppRouter.tsx
+
+========================================
+DUPLICATE FILE NAMES
+========================================
+.gitkeep
+AppRouter.tsx
+Container.tsx
+Flex.tsx
+Grid.tsx
+MainLayout.tsx
+README.md
+Section.tsx
+index.ts
+index.tsx
+
+========================================
+BUILD
+========================================
+
+> studioit@0.0.0 build
+> tsc -b && vite build
+
+vite v8.2.0 building client environment for production...
+[2Ktransforming...✓ 47 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.45 kB │ gzip:  0.29 kB
+dist/assets/index-B9DolQpJ.css   27.80 kB │ gzip:  6.14 kB
+dist/assets/index-BgC_Yv-I.js   229.90 kB │ gzip: 73.79 kB
+
+✓ built in 268ms
+
+========================================
+GIT STATUS
+========================================
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .firebase/hosting.ZGlzdA.cache
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	audit/MASTER_ARCHITECTURE_REPORT.txt
+	part-0072-master-architecture-audit.sh
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+========================================
+END OF REPORT
+========================================
