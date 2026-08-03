@@ -11,11 +11,9 @@ textAlign:"center"
 }}
 >
 
-
 <h2
 style={{
-fontFamily:"Poppins",
-marginBottom:"10px"
+fontFamily:"Poppins"
 }}
 >
 StudioIT
@@ -44,14 +42,13 @@ Investment Technology Indonesia
 
 <div
 style={{
-marginTop:"20px",
-lineHeight:"2"
+fontSize:"14px",
+lineHeight:"1.6"
 }}
 >
 
 <div>
-<strong>SMS</strong>
-&nbsp;&nbsp;
+SMS{" "}
 <a
 href="sms:+6285283397198"
 style={{
@@ -64,8 +61,7 @@ color:"#FFFFFF"
 
 
 <div>
-<strong>Email</strong>
-&nbsp;&nbsp;
+Email{" "}
 <a
 href="mailto:alma.budsteddy88@gmail.com"
 style={{
@@ -80,11 +76,7 @@ alma.budsteddy88@gmail.com
 </div>
 
 
-<p
-style={{
-marginTop:"20px"
-}}
->
+<p>
 © 2026 StudioIT. All rights reserved.
 </p>
 
