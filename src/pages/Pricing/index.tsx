@@ -87,6 +87,7 @@ return(
 <div>
 
 
+
 <section
 
 style={{
@@ -97,18 +98,48 @@ textAlign:"left"
 
 >
 
+<div
+
+style={{
+maxWidth:"1200px",
+margin:"auto"
+}}
+
+>
+
+
+<p
+
+style={{
+display:"inline-block",
+background:"#E63946",
+color:"#FFFFFF",
+padding:"8px 18px",
+borderRadius:"30px",
+fontFamily:"Poppins",
+fontSize:"14px",
+fontWeight:600,
+marginBottom:"24px"
+}}
+
+>
+
+Paket Kami
+
+</p>
+
 
 <h1
 
 style={{
 fontFamily:"Poppins",
-fontSize:"38px",
+fontSize:"32px",
 color:"#1F2937"
 }}
 
 >
 
-Paket Kami StudioIT
+Pilih Solusi Digital Untuk Pertumbuhan Bisnis
 
 </h1>
 
@@ -116,21 +147,26 @@ Paket Kami StudioIT
 <p
 
 style={{
-maxWidth:"850px",
-margin:"25px auto",
+fontFamily:"Inter",
+fontSize:"17px",
 lineHeight:"1.8",
 color:"#374151"
 }}
 
 >
 
-Paket solusi digital fleksibel untuk membantu bisnis,
-startup, dan organisasi membangun teknologi modern.
+StudioIT menyediakan pilihan paket teknologi yang fleksibel
+untuk membantu perusahaan, UMKM, dan startup membangun
+solusi digital modern melalui website, aplikasi mobile,
+sistem enterprise, AI, dan cloud.
 
 </p>
 
 
+</div>
+
 </section>
+
 
 
 
