@@ -43,7 +43,7 @@ return(
 <section
 style={{
 padding:"80px 24px",
-background:"#FFFFFF"
+background:"#FFE8E8"
 }}
 >
 
@@ -115,7 +115,7 @@ width:"100%",
 
 padding:"16px 20px",
 
-background:"#FFFFFF",
+background:"#FFE8E8",
 
 border:"none",
 
