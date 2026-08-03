@@ -88,6 +88,21 @@ Layanan Kami
 </p>
 
 
+<div
+
+style={{
+display:"grid",
+gridTemplateColumns:"repeat(auto-fit,minmax(320px,1fr))",
+gap:"60px",
+alignItems:"center",
+marginTop:"40px"
+}}
+
+>
+
+
+<div>
+
 <p
 
 style={{
@@ -96,8 +111,7 @@ fontSize:"16px",
 lineHeight:"1.8",
 color:"#374151",
 textAlign:"left",
-maxWidth:"800px",
-marginTop:"20px"
+maxWidth:"800px"
 }}
 
 >
@@ -105,6 +119,8 @@ marginTop:"20px"
 StudioIT menyediakan solusi teknologi digital yang dirancang sesuai kebutuhan bisnis, mulai dari pengembangan website, aplikasi mobile, sistem enterprise, hingga solusi AI dan cloud. Kami membantu perusahaan, UMKM, dan startup membangun sistem yang modern, scalable, dan siap mendukung pertumbuhan bisnis di era digital.
 
 </p>
+
+</div>
 
 
 
@@ -164,6 +180,9 @@ fontFamily:"Poppins"
 ))
 
 }
+
+
+</div>
 
 
 </div>
