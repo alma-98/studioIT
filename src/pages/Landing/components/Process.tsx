@@ -1,5 +1,4 @@
 
-
 export default function Process(){
 
 const steps=[
@@ -12,36 +11,38 @@ const steps=[
 
 return(
 
-<section
-style={{
-padding:"80px 24px",
-textAlign:"center"
-}}
->
+<section style={{padding:"80px 24px"}}>
 
 <h2>
 Proses Pengembangan
 </h2>
 
 
-<div>
-
-{
-steps.map((step,index)=>(
-
 <div
-key={step}
 style={{
-margin:"15px"
+display:"grid",
+gridTemplateColumns:"repeat(4,1fr)",
+gap:"20px"
 }}
 >
 
-<strong>
-0{index+1}
-</strong>
+{
+steps.map((s,i)=>(
 
-{" "}
-{step}
+<div
+key={s}
+style={{
+background:"#FFFFFF",
+padding:"25px",
+borderRadius:"15px"
+}}
+>
+
+<h3>
+0{i+1}
+</h3>
+
+<p>{s}</p>
 
 </div>
 
@@ -49,7 +50,6 @@ margin:"15px"
 }
 
 </div>
-
 
 </section>
 
