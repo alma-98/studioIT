@@ -1,0 +1,139 @@
+/* ======================================================
+   StudioIT Print Utility
+====================================================== */
+
+/* Hide on Screen */
+
+.print-only{
+display:none;
+}
+
+/* Hide on Print */
+
+.no-print{
+display:block;
+}
+
+/* Page Break */
+
+.page-break-before{
+break-before:page;
+page-break-before:always;
+}
+
+.page-break-after{
+break-after:page;
+page-break-after:always;
+}
+
+.page-break-inside-avoid{
+break-inside:avoid;
+page-break-inside:avoid;
+}
+
+/* Print Orientation */
+
+.print-portrait{
+page:portrait;
+}
+
+.print-landscape{
+page:landscape;
+}
+
+/* Print Rules */
+
+@media print{
+
+html,
+body{
+background:#ffffff !important;
+color:#000000 !important;
+font-size:12pt;
+line-height:1.5;
+}
+
+/* Visibility */
+
+.print-only{
+display:block !important;
+}
+
+.no-print{
+display:none !important;
+}
+
+/* Links */
+
+a{
+color:#000 !important;
+text-decoration:underline;
+}
+
+/* Images */
+
+img{
+max-width:100% !important;
+page-break-inside:avoid;
+}
+
+/* Tables */
+
+table{
+width:100%;
+border-collapse:collapse;
+page-break-inside:auto;
+}
+
+tr{
+page-break-inside:avoid;
+page-break-after:auto;
+}
+
+thead{
+display:table-header-group;
+}
+
+tfoot{
+display:table-footer-group;
+}
+
+/* Code */
+
+pre,
+code{
+white-space:pre-wrap;
+word-break:break-word;
+}
+
+/* Remove Effects */
+
+*{
+box-shadow:none !important;
+text-shadow:none !important;
+filter:none !important;
+animation:none !important;
+transition:none !important;
+}
+
+/* Container */
+
+.container-responsive{
+max-width:100%;
+padding:0;
+margin:0;
+}
+
+}
+
+/* Orientation */
+
+@page portrait{
+size:A4 portrait;
+margin:15mm;
+}
+
+@page landscape{
+size:A4 landscape;
+margin:15mm;
+}

@@ -1,14 +1,15 @@
 
-import {Outlet} from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import FloatingSMS from "../components/sms/FloatingSMS";
+import PopupSMS from "../components/sms/PopupSMS";
 
 
 export default function MainLayout(){
 
-return(
+return (
 
 <div
 style={{
@@ -17,7 +18,9 @@ background:"#FFE8E8"
 }}
 >
 
+
 <Navbar/>
+
 
 <main>
 
@@ -27,6 +30,10 @@ background:"#FFE8E8"
 
 
 <Footer/>
+
+
+<PopupSMS/>
+
 
 <FloatingSMS/>
 
