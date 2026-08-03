@@ -42,7 +42,7 @@ return (
 <section
 
 style={{
-padding:"0 24px 60px",
+padding:"35px 24px",
 background:"#FFE8E8"
 }}
 
