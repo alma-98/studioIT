@@ -4,109 +4,214 @@ import { Link } from "react-router-dom";
 
 export default function Navbar(){
 
+const menus=[
+
+{
+name:"Home",
+path:"/"
+},
+
+{
+name:"Services",
+path:"/services"
+},
+
+{
+name:"Portfolio",
+path:"/portfolio"
+},
+
+{
+name:"Pricing",
+path:"/pricing"
+},
+
+{
+name:"Blog",
+path:"/blog"
+},
+
+{
+name:"Contact",
+path:"/contact"
+}
+
+]
+
+
 return(
 
 <header
+
 style={{
+
 position:"sticky",
+
 top:0,
+
 zIndex:1000,
+
 background:"#FFFFFF",
-boxShadow:"0 4px 15px rgba(0,0,0,.08)"
+
+boxShadow:"0 4px 18px rgba(0,0,0,.08)"
+
 }}
+
 >
 
 
 <nav
+
 style={{
+
+maxWidth:"1200px",
+
 height:"72px",
+
+margin:"auto",
+
+padding:"0 24px",
+
 display:"flex",
+
 alignItems:"center",
-justifyContent:"space-between",
-padding:"0 32px"
+
+justifyContent:"space-between"
+
 }}
+
 >
 
 
-<div>
+<Link
+
+to="/"
+
+style={{
+
+textDecoration:"none"
+
+}}
+
+>
 
 <h2
+
 style={{
+
 fontFamily:"Poppins",
+
 color:"#E63946",
-margin:0
+
+margin:0,
+
+fontSize:"26px"
+
 }}
+
 >
+
 StudioIT
+
 </h2>
 
-</div>
+</Link>
 
 
 
 <div
+
 style={{
+
 display:"flex",
-gap:"24px",
-alignItems:"center"
+
+alignItems:"center",
+
+gap:"24px"
+
 }}
+
 >
 
 
-<Link to="/">
-Home
+{
+
+menus.map(menu=>(
+
+<Link
+
+key={menu.name}
+
+to={menu.path}
+
+style={{
+
+textDecoration:"none",
+
+color:"#374151",
+
+fontFamily:"Inter",
+
+fontSize:"15px"
+
+}}
+
+>
+
+{menu.name}
+
 </Link>
 
+))
 
-<Link to="/services">
-Services
-</Link>
-
-
-<Link to="/portfolio">
-Portfolio
-</Link>
-
-
-<Link to="/pricing">
-Pricing
-</Link>
-
-
-<Link to="/blog">
-Blog
-</Link>
-
-
-<Link to="/contact">
-Contact
-</Link>
+}
 
 
 
 <a
+
 href="mailto:alma.budsteddy88@gmail.com"
+
 style={{
+
 textDecoration:"none"
+
 }}
+
 >
 
+
 <button
+
 style={{
+
 background:"#E63946",
+
 color:"#FFFFFF",
+
 border:"none",
+
 padding:"12px 22px",
-borderRadius:"10px",
-cursor:"pointer"
+
+borderRadius:"12px",
+
+fontFamily:"Poppins",
+
+cursor:"pointer",
+
+fontSize:"14px"
+
 }}
+
 >
 
 Konsultasi Project
 
 </button>
 
+
 </a>
+
 
 
 </div>
@@ -116,6 +221,7 @@ Konsultasi Project
 
 
 </header>
+
 
 )
 
