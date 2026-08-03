@@ -85,7 +85,7 @@ fontSize:"30px",
 color:"#1F2937"
 }}
 >
-Portfolio Project
+Pengembangan Proyek Kami
 </h2>
 
 
