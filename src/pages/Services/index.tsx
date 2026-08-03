@@ -52,7 +52,7 @@ return (
 
 style={{
 padding:"90px 24px",
-background:"linear-gradient(135deg,#FFE8E8,#FFFFFF)"
+background:"#FFE8E8"
 }}
 
 >
@@ -130,7 +130,7 @@ key={item.name}
 
 style={{
 
-background:"linear-gradient(135deg,#FFE8E8,#FFFFFF)",
+background:"#FFE8E8",
 padding:"30px",
 borderRadius:"18px",
 boxShadow:"0 10px 30px rgba(0,0,0,.08)",
