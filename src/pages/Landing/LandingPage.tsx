@@ -8,7 +8,6 @@ import PortfolioPreview from "./components/PortfolioPreview";
 import Technology from "./components/Technology";
 import Process from "./components/Process";
 import FAQ from "./components/FAQ";
-import CTA from "./components/CTA";
 
 
 export default function LandingPage(){
@@ -37,7 +36,7 @@ return(
 
 <FAQ/>
 
-<CTA/>
+
 
 </>
 
