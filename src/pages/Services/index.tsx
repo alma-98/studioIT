@@ -62,25 +62,6 @@ Layanan Kami
 </p>
 
 
-<p
-
-style={{
-fontFamily:"Inter",
-fontSize:"16px",
-lineHeight:"1.8",
-color:"#374151",
-textAlign:"left",
-maxWidth:"800px",
-margin:"20px 0"
-}}
-
->
-
-StudioIT menyediakan solusi teknologi digital yang dirancang sesuai kebutuhan bisnis, mulai dari pengembangan website, aplikasi mobile, sistem enterprise, hingga solusi AI dan cloud. Kami membantu perusahaan, UMKM, dan startup membangun sistem yang modern, scalable, dan siap mendukung pertumbuhan bisnis di era digital.
-
-</p>
-
-
 
 <div
 
@@ -126,6 +107,18 @@ fontFamily:"Poppins"
 
 </h3>
 
+
+<p
+
+style={{
+color:"#374151"
+}}
+
+>
+
+Solusi teknologi modern untuk mendukung kebutuhan bisnis.
+
+</p>
 
 
 </div>
