@@ -111,6 +111,7 @@ fontSize:"16px",
 lineHeight:"1.8",
 color:"#374151",
 textAlign:"left",
+whiteSpace:"nowrap",
 maxWidth:"800px"
 }}
 
@@ -146,8 +147,9 @@ key={item.name}
 style={{
 
 background:"#FFFFFF",
-width:"240px",
-padding:"14px 16px",
+width:"fit-content",
+minWidth:"240px",
+padding:"14px 20px",
 borderRadius:"12px",
 boxShadow:"0 10px 30px rgba(0,0,0,.08)",
 textAlign:"left"
