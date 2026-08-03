@@ -43,33 +43,46 @@ style={{
 fontFamily:"Inter",
 maxWidth:"700px",
 margin:"20px auto",
-color:"#374151"
+color:"#374151",
+lineHeight:"1.8"
 }}
 >
 StudioIT menghadirkan solusi teknologi modern:
+<br/>
 Website, Mobile Apps, AI, Cloud Solution,
+<br/>
 dan Sistem Digital Bisnis.
 </p>
 
 
-<div>
+<a
+href="mailto:alma.budsteddy88@gmail.com"
+style={{
+textDecoration:"none"
+}}
+>
 
-<a href="mailto:alma.budsteddy88@gmail.com" style={{textDecoration:"none"}}>\n<button
+<button
 style={{
 background:"#E63946",
 color:"#FFFFFF",
 border:"none",
 padding:"14px 28px",
 borderRadius:"12px",
-cursor:"pointer"
+cursor:"pointer",
+display:"inline-flex",
+alignItems:"center",
+gap:"8px"
 }}
 >
+
 Konsultasi Project
+
 <ArrowRight size={18}/>
-</button>\n</a>
 
+</button>
 
-</div>
+</a>
 
 
 </motion.div>
