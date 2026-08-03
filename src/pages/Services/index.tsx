@@ -7,46 +7,35 @@ Cloud
 } from "lucide-react";
 
 
-export default function Services(){
-
-const services=[
-
+const services = [
 {
 name:"Website Development",
 icon:Globe
 },
-
 {
 name:"Mobile Application",
 icon:Smartphone
 },
-
 {
 name:"Artificial Intelligence",
 icon:BrainCircuit
 },
-
 {
 name:"Enterprise System",
 icon:Building2
 },
-
 {
 name:"Cloud Infrastructure",
 icon:Cloud
 }
-
 ];
 
+
+export default function Services(){
 
 return (
 
 <div>
-
-
-
-
-
 
 <section
 
@@ -57,15 +46,21 @@ background:"#FFE8E8"
 
 >
 
-
 <div
 
 style={{
 maxWidth:"1200px",
-margin:"auto"
+margin:"auto",
+display:"grid",
+gridTemplateColumns:"repeat(auto-fit,minmax(320px,1fr))",
+gap:"70px",
+alignItems:"center"
 }}
 
 >
+
+
+<div>
 
 
 <p
@@ -88,17 +83,25 @@ Layanan Kami
 </p>
 
 
-<div
+
+<h1
 
 style={{
-display:"block",
-marginTop:"40px"
+fontFamily:"Poppins",
+fontSize:"42px",
+lineHeight:"1.2",
+color:"#1F2937"
 }}
 
 >
 
+Solusi Teknologi Digital
+<br/>
+Untuk Kebutuhan Bisnis
 
-<div>
+</h1>
+
+
 
 <p
 
@@ -107,15 +110,18 @@ fontFamily:"Inter",
 fontSize:"16px",
 lineHeight:"1.8",
 color:"#374151",
-textAlign:"left",
-maxWidth:"800px"
+textAlign:"left"
 }}
 
 >
 
-StudioIT menyediakan solusi teknologi digital yang dirancang sesuai kebutuhan bisnis, mulai dari pengembangan website, aplikasi mobile, sistem enterprise, hingga solusi AI dan cloud. Kami membantu perusahaan, UMKM, dan startup membangun sistem yang modern, scalable, dan siap mendukung pertumbuhan bisnis di era digital.
+StudioIT menyediakan layanan pengembangan teknologi
+mulai dari website, aplikasi mobile, AI, sistem enterprise,
+hingga cloud infrastructure untuk membantu bisnis
+melakukan transformasi digital.
 
 </p>
+
 
 </div>
 
@@ -125,9 +131,7 @@ StudioIT menyediakan solusi teknologi digital yang dirancang sesuai kebutuhan bi
 
 style={{
 display:"grid",
-gap:"14px",
-marginTop:"0",
-justifyItems:"start"
+gap:"18px"
 }}
 
 >
@@ -135,66 +139,57 @@ justifyItems:"start"
 
 {
 
-services.map(item=>(
+services.map(item=>{
+
+const Icon=item.icon;
+
+return (
 
 <div
 
 key={item.name}
-style={{
 
+style={{
 background:"#FFFFFF",
-width:"240px",
-padding:"14px 20px",
-borderRadius:"12px",
-boxShadow:"0 10px 30px rgba(0,0,0,.08)",
-textAlign:"left"
-
-}}
-
->
-
-<div
-
-style={{
+padding:"18px 22px",
+borderRadius:"16px",
 display:"flex",
 alignItems:"center",
-gap:"14px"
+gap:"14px",
+boxShadow:"0 8px 20px rgba(0,0,0,.06)"
 }}
 
 >
 
-<item.icon
-size={20}
+<Icon
+size={22}
 color="#E63946"
 />
 
 
-<h3
+<span
 
 style={{
 fontFamily:"Poppins",
 fontSize:"16px",
 fontWeight:600,
-margin:0
+color:"#1F2937"
 }}
 
 >
 
 {item.name}
 
-</h3>
-
-</div>
+</span>
 
 
 </div>
 
-))
+)
+
+})
 
 }
-
-
-</div>
 
 
 </div>
