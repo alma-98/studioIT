@@ -91,10 +91,7 @@ Layanan Kami
 <div
 
 style={{
-display:"grid",
-gridTemplateColumns:"repeat(auto-fit,minmax(320px,1fr))",
-gap:"60px",
-alignItems:"center",
+display:"block",
 marginTop:"40px"
 }}
 
