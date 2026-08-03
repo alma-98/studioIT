@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 import {
 Globe,
 Smartphone,
@@ -42,9 +40,8 @@ return (
 <section
 
 style={{
-padding:"100px 24px",
-background:"#FFE8E8",
-textAlign:"left"
+padding:"60px 24px",
+background:"#FFE8E8"
 }}
 
 >
@@ -55,31 +52,15 @@ style={{
 maxWidth:"1200px",
 margin:"auto",
 display:"grid",
-gridTemplateColumns:"repeat(auto-fit,minmax(280px,1fr))",
-gap:"60px",
+gridTemplateColumns:"repeat(auto-fit,minmax(320px,1fr))",
+gap:"70px",
 alignItems:"center"
 }}
 
 >
 
 
-<motion.div
-
-initial={{
-opacity:0,
-y:30
-}}
-
-whileInView={{
-opacity:1,
-y:0
-}}
-
-transition={{
-duration:0.6
-}}
-
->
+<div>
 
 
 <p
@@ -89,8 +70,7 @@ display:"inline-block",
 background:"#E63946",
 color:"#FFFFFF",
 padding:"8px 18px",
-borderRadius:"30px",
-marginBottom:"24px",
+borderRadius:"20px",
 fontFamily:"Poppins",
 fontSize:"14px",
 fontWeight:600
@@ -108,14 +88,16 @@ Layanan Kami
 
 style={{
 fontFamily:"Poppins",
-fontSize:"32px",
+fontSize:"38px",
 lineHeight:"1.2",
 color:"#1F2937"
 }}
 
 >
 
-Solusi Teknologi Digital Untuk Kebutuhan Bisnis
+Solusi Teknologi Digital
+<br/>
+Untuk Kebutuhan Bisnis
 
 </h1>
 
@@ -125,7 +107,7 @@ Solusi Teknologi Digital Untuk Kebutuhan Bisnis
 
 style={{
 fontFamily:"Inter",
-fontSize:"17px",
+fontSize:"16px",
 lineHeight:"1.8",
 color:"#374151",
 textAlign:"left"
@@ -140,7 +122,7 @@ Dengan pendekatan teknologi modern dan scalable, StudioIT membantu membangun sis
 </p>
 
 
-</motion.div>
+</div>
 
 
 
@@ -148,7 +130,6 @@ Dengan pendekatan teknologi modern dan scalable, StudioIT membantu membangun sis
 
 style={{
 display:"grid",
-gridTemplateColumns:"repeat(auto-fit,minmax(220px,1fr))",
 gap:"18px"
 }}
 
@@ -157,49 +138,30 @@ gap:"18px"
 
 {
 
-services.map((item,index)=>{
+services.map(item=>{
 
 const Icon=item.icon;
 
 return (
 
-<motion.div
+<div
 
 key={item.name}
 
-initial={{
-opacity:0,
-y:30
-}}
-
-whileInView={{
-opacity:1,
-y:0
-}}
-
-transition={{
-delay:index*.1
-}}
-
-whileHover={{
-y:-8
-}}
-
 style={{
 background:"#FFFFFF",
-
-padding:"12px 18px",
-borderRadius:"12px",
+padding:"18px 22px",
+borderRadius:"16px",
 display:"flex",
 alignItems:"center",
-gap:"12px",
+gap:"14px",
 boxShadow:"0 8px 20px rgba(0,0,0,.06)"
 }}
 
 >
 
 <Icon
-size={18}
+size={22}
 color="#E63946"
 />
 
@@ -208,8 +170,8 @@ color="#E63946"
 
 style={{
 fontFamily:"Poppins",
-fontSize:"14px",
-fontWeight:500,
+fontSize:"16px",
+fontWeight:600,
 color:"#1F2937"
 }}
 
@@ -220,7 +182,7 @@ color:"#1F2937"
 </span>
 
 
-</motion.div>
+</div>
 
 )
 

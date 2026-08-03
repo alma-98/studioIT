@@ -14,8 +14,6 @@ return (
 <div
 style={{
 minHeight:"100vh",
-display:"flex",
-flexDirection:"column",
 background:"#FFFFFF"
 }}
 >
@@ -24,7 +22,7 @@ background:"#FFFFFF"
 <Navbar/>
 
 
-<main style={{flex:1}}>
+<main>
 
 <Outlet/>
 
