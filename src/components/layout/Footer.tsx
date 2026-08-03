@@ -11,9 +11,16 @@ textAlign:"center"
 }}
 >
 
-<h2>
+
+<h2
+style={{
+fontFamily:"Poppins",
+marginBottom:"10px"
+}}
+>
 StudioIT
 </h2>
+
 
 <p>
 Transformasi Digital Untuk Indonesia Maju
@@ -35,9 +42,16 @@ Investment Technology Indonesia
 </p>
 
 
-<p>
-SMS
-<br/>
+<div
+style={{
+marginTop:"20px",
+lineHeight:"2"
+}}
+>
+
+<div>
+<strong>SMS</strong>
+&nbsp;&nbsp;
 <a
 href="sms:+6285283397198"
 style={{
@@ -46,12 +60,12 @@ color:"#FFFFFF"
 >
 +6285283397198
 </a>
-</p>
+</div>
 
 
-<p>
-Email
-<br/>
+<div>
+<strong>Email</strong>
+&nbsp;&nbsp;
 <a
 href="mailto:alma.budsteddy88@gmail.com"
 style={{
@@ -60,10 +74,17 @@ color:"#FFFFFF"
 >
 alma.budsteddy88@gmail.com
 </a>
-</p>
+</div>
 
 
-<p>
+</div>
+
+
+<p
+style={{
+marginTop:"20px"
+}}
+>
 © 2026 StudioIT. All rights reserved.
 </p>
 
