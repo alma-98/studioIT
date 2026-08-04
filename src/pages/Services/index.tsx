@@ -280,7 +280,7 @@ color:"#6B7280",
 marginBottom:"40px"
 }}
 >
-Express Delivery tersedia untuk proyek tertentu. Timeline dapat berubah sesuai kompleksitas proyek.
+Estimasi waktu pengerjaan dapat berbeda sesuai ruang lingkup proyek, kompleksitas fitur, kebutuhan integrasi, dan proses revisi. Express Delivery tersedia untuk proyek tertentu.
 </p>
 
 <div
