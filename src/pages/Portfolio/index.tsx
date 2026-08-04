@@ -37,7 +37,7 @@ title:"AlmaMobiiee",
 category:"Automotive Digital Platform",
 tech:"Web • Interactive Experience",
 desc:"Platform digital otomotif dengan pengalaman interaktif dan konsep branding teknologi kreatif.",
-link:"https://alma-98.github.io/almaMobiiee/"
+link:"https://almamobiiee.web.app/"
 },
 
 {

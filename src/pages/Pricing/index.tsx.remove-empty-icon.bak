@@ -1,6 +1,12 @@
 
 import { motion } from "framer-motion";
-import { Smartphone, BrainCircuit, Settings, CheckCircle} from "lucide-react";
+import {
+Globe,
+Smartphone,
+BrainCircuit,
+Building2,
+Settings
+} from "lucide-react";
 
 
 export default function Pricing(){
@@ -11,6 +17,7 @@ const packages=[
 {
 title:"Starter Website",
 price:"Mulai Dari Rp 5 Juta",
+icon:Globe,
 desc:"Untuk bisnis kecil dan personal brand.",
 features:[
 "Landing Page Profesional",
@@ -24,6 +31,7 @@ features:[
 {
 title:"Business Website",
 price:"Mulai Dari Rp 15 Juta",
+icon:Globe,
 desc:"Untuk perusahaan yang membutuhkan website profesional.",
 features:[
 "Multi Page Website",
@@ -37,6 +45,7 @@ features:[
 {
 title:"Enterprise Solution",
 price:"Custom Quote",
+icon:Building2,
 desc:"Solusi digital dengan kebutuhan sistem kompleks.",
 features:[
 "Custom Web Application",
@@ -108,7 +117,6 @@ color:"#FFFFFF",
 padding:"8px 18px",
 borderRadius:"30px",
 fontFamily:"Poppins",
-margin:"0 0 14px",
 fontSize:"14px",
 fontWeight:600,
 textAlign:"left",
@@ -225,6 +233,22 @@ textAlign:"center"
 >
 
 
+<div
+
+style={{
+width:"64px",
+height:"64px",
+margin:"0 auto",
+borderRadius:"18px",
+background:"#FFE8E8",
+display:"flex",
+alignItems:"center",
+justifyContent:"center",
+}}
+
+>
+
+</div>
 
 
 
@@ -233,7 +257,7 @@ textAlign:"center"
 style={{
 fontFamily:"Poppins",
 fontSize:"22px",
-margin:"0 0 8px"
+marginTop:"20px"
 }}
 
 >
@@ -248,8 +272,7 @@ margin:"0 0 8px"
 
 style={{
 color:"#E63946",
-fontFamily:"Poppins",
-margin:"0 0 14px"
+fontFamily:"Poppins"
 }}
 
 >
@@ -262,9 +285,7 @@ margin:"0 0 14px"
 
 <p
 style={{
-color:"#374151",
-lineHeight:"1.7",
-margin:"0 0 24px"
+color:"#374151"
 }}
 >
 {item.desc}
@@ -277,8 +298,7 @@ margin:"0 0 24px"
 style={{
 textAlign:"left",
 lineHeight:"2",
-paddingLeft:0,
-margin:0
+paddingLeft:"20px"
 }}
 
 >
@@ -286,25 +306,8 @@ margin:0
 {
 item.features.map(feature=>(
 
-<li
-key={feature}
-style={{
-display:"flex",
-alignItems:"center",
-gap:"10px",
-marginBottom:"12px",
-listStyle:"none"
-}}
->
-<CheckCircle
-size={18}
-color="#E63946"
-strokeWidth={2}
-style={{
-flexShrink:0
-}}
-/>
-<span>{feature}</span>
+<li key={feature}>
+{feature}
 </li>
 
 ))
@@ -412,8 +415,6 @@ marginTop:"30px"
 {
 solutions.map(item=>{
 
-const Icon=item.icon;
-
 return(
 
 <div
@@ -422,43 +423,22 @@ key={item.title}
 
 style={{
 background:"#FFFFFF",
-padding:"32px",
+padding:"25px",
 borderRadius:"18px",
-textAlign:"center",
-boxShadow:"0 10px 30px rgba(0,0,0,.08)"
+textAlign:"center"
 }}
 
 >
 
-<Icon
-size={48}
-color="#E63946"
-strokeWidth={2}
-style={{
-display:"block",
-margin:"0 auto 18px"
-}}
-/>
-
-<h3
-style={{
-fontFamily:"Poppins",
-fontSize:"22px",
-marginBottom:"12px"
-}}
->
+<h3>
 {item.title}
 </h3>
 
-<p
-style={{
-color:"#4B5563",
-lineHeight:"1.8",
-margin:0
-}}
->
+
+<p>
 {item.desc}
 </p>
+
 
 </div>
 

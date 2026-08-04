@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import { Smartphone, BrainCircuit, Settings, CheckCircle} from "lucide-react";
+import { Smartphone, BrainCircuit, Settings } from "lucide-react";
 
 
 export default function Pricing(){
@@ -108,7 +108,6 @@ color:"#FFFFFF",
 padding:"8px 18px",
 borderRadius:"30px",
 fontFamily:"Poppins",
-margin:"0 0 14px",
 fontSize:"14px",
 fontWeight:600,
 textAlign:"left",
@@ -233,7 +232,7 @@ textAlign:"center"
 style={{
 fontFamily:"Poppins",
 fontSize:"22px",
-margin:"0 0 8px"
+marginTop:"0"
 }}
 
 >
@@ -248,8 +247,7 @@ margin:"0 0 8px"
 
 style={{
 color:"#E63946",
-fontFamily:"Poppins",
-margin:"0 0 14px"
+fontFamily:"Poppins"
 }}
 
 >
@@ -262,9 +260,7 @@ margin:"0 0 14px"
 
 <p
 style={{
-color:"#374151",
-lineHeight:"1.7",
-margin:"0 0 24px"
+color:"#374151"
 }}
 >
 {item.desc}
@@ -277,8 +273,7 @@ margin:"0 0 24px"
 style={{
 textAlign:"left",
 lineHeight:"2",
-paddingLeft:0,
-margin:0
+paddingLeft:"20px"
 }}
 
 >
@@ -286,25 +281,8 @@ margin:0
 {
 item.features.map(feature=>(
 
-<li
-key={feature}
-style={{
-display:"flex",
-alignItems:"center",
-gap:"10px",
-marginBottom:"12px",
-listStyle:"none"
-}}
->
-<CheckCircle
-size={18}
-color="#E63946"
-strokeWidth={2}
-style={{
-flexShrink:0
-}}
-/>
-<span>{feature}</span>
+<li key={feature}>
+{feature}
 </li>
 
 ))

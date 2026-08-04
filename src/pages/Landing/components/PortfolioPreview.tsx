@@ -32,7 +32,7 @@ link:"https://questdemon.web.app/"
 title:"AlmaMobiiee",
 category:"Automotive Digital Platform",
 desc:"Platform digital otomotif dengan pengalaman interaktif dan branding karakter.",
-link:"https://alma-98.github.io/almaMobiiee/"
+link:"https://almamobiiee.web.app/"
 },
 
 {

@@ -42,11 +42,9 @@ return (
 <section
 
 style={{
-width:"100%",
-padding:"clamp(60px,8vw,100px) 24px",
+padding:"100px 24px",
 background:"#FFE8E8",
-textAlign:"left",
-overflow:"hidden"
+textAlign:"left"
 }}
 
 >
@@ -55,11 +53,10 @@ overflow:"hidden"
 
 style={{
 maxWidth:"1200px",
-width:"100%",
 margin:"auto",
 display:"grid",
-gridTemplateColumns:"repeat(auto-fit,minmax(260px,1fr))",
-gap:"clamp(24px,4vw,60px)",
+gridTemplateColumns:"repeat(auto-fit,minmax(280px,1fr))",
+gap:"60px",
 alignItems:"center"
 }}
 
@@ -152,7 +149,7 @@ Dengan pendekatan teknologi modern dan scalable, StudioIT membantu membangun sis
 style={{
 display:"grid",
 gridTemplateColumns:"repeat(auto-fit,minmax(220px,1fr))",
-gap:"16px"
+gap:"18px"
 }}
 
 >
