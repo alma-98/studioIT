@@ -48,6 +48,32 @@ desc:"Platform katalog merchandise dan produk hadiah dengan tampilan modern dan 
 link:"https://almamobiieegift.web.app/"
 },
 
+
+
+{
+title:"Toko Design",
+category:"E-Commerce Website",
+desc:"Website katalog dan penjualan produk desain dengan tampilan modern dan responsif.",
+link:"https://alma-98.github.io/toko-design/",
+tech:"HTML • CSS • JavaScript"
+},
+
+{
+title:"TokoBangun",
+category:"Building Material Platform",
+desc:"Website katalog bahan bangunan modern untuk kebutuhan konstruksi.",
+link:"https://alma-98.github.io/tokobangun/",
+tech:"React • TypeScript • Firebase"
+},
+
+{
+title:"Lia Tailor",
+category:"Tailor & Fashion Website",
+desc:"Website profil dan katalog layanan jahit profesional dengan tampilan elegan dan responsif.",
+link:"https://lia-tailor.web.app",
+tech:"React • Firebase"
+},
+
 {
 title:"Workforce Intelligence Platform",
 category:"AI HRIS Platform",
