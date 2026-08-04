@@ -62,7 +62,7 @@ tech:"HTML • CSS • JavaScript"
 title:"TokoBangun",
 category:"Building Material Platform",
 desc:"Website katalog bahan bangunan modern untuk kebutuhan konstruksi.",
-link:"https://alma-98.github.io/tokobangun/",
+link:"https://alma-98.github.io/TokoBangun/",
 tech:"React • TypeScript • Firebase"
 },
 
