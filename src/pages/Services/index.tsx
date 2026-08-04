@@ -241,6 +241,143 @@ color:"#1F2937"
 </section>
 
 
+
+
+<section
+  style={{
+    width:"100%",
+    padding:"80px 24px",
+    background:"#FFFFFF"
+  }}
+>
+
+<div
+style={{
+maxWidth:"1200px",
+margin:"0 auto"
+}}
+>
+
+<h2
+style={{
+fontFamily:"Poppins",
+fontSize:"32px",
+fontWeight:700,
+textAlign:"center",
+color:"#1F2937",
+marginBottom:"12px"
+}}
+>
+Layanan Kami & Estimasi Pengerjaan
+</h2>
+
+<p
+style={{
+fontFamily:"Inter",
+fontSize:"16px",
+textAlign:"center",
+color:"#6B7280",
+marginBottom:"40px"
+}}
+>
+Express Delivery tersedia untuk proyek tertentu. Timeline dapat berubah sesuai kompleksitas proyek.
+</p>
+
+<div
+style={{
+overflowX:"auto",
+borderRadius:"20px",
+boxShadow:"0 10px 30px rgba(0,0,0,.08)"
+}}
+>
+
+<table
+style={{
+width:"100%",
+borderCollapse:"collapse",
+background:"#FFFFFF",
+minWidth:"1100px"
+}}
+>
+
+<thead>
+
+<tr
+style={{
+background:"#E63946",
+color:"#FFFFFF"
+}}
+>
+
+<th style={{padding:"18px",textAlign:"left"}}>Kategori</th>
+<th style={{padding:"18px",textAlign:"left"}}>Layanan</th>
+<th style={{padding:"18px",textAlign:"center"}}>Estimasi</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td style={{padding:"18px",fontWeight:600}}>🌐 Web Solutions</td>
+<td style={{padding:"18px"}}>Landing Page, Company Profile, Company Portal, E-Commerce, Dashboard, Custom Website</td>
+<td style={{padding:"18px",textAlign:"center",fontWeight:600}}>1 hari – 6 minggu</td>
+</tr>
+
+<tr style={{background:"#FFF8F8"}}>
+<td style={{padding:"18px",fontWeight:600}}>📱 Mobile Solutions</td>
+<td style={{padding:"18px"}}>Android App, iOS App, Cross Platform App, Mobile Dashboard</td>
+<td style={{padding:"18px",textAlign:"center",fontWeight:600}}>1 minggu – 3 bulan</td>
+</tr>
+
+<tr>
+<td style={{padding:"18px",fontWeight:600}}>💼 Business Solutions</td>
+<td style={{padding:"18px"}}>HRIS, ERP, CRM, POS, Inventory, Payroll, Booking System, LMS, School System, Clinic System</td>
+<td style={{padding:"18px",textAlign:"center",fontWeight:600}}>2 minggu – 6 bulan</td>
+</tr>
+
+<tr style={{background:"#FFF8F8"}}>
+<td style={{padding:"18px",fontWeight:600}}>🤖 AI Solutions</td>
+<td style={{padding:"18px"}}>AI Chatbot, AI Assistant, AI Automation, AI Analytics, AI Recommendation</td>
+<td style={{padding:"18px",textAlign:"center",fontWeight:600}}>1 hari – 2 bulan</td>
+</tr>
+
+<tr>
+<td style={{padding:"18px",fontWeight:600}}>🔗 Integration Solutions</td>
+<td style={{padding:"18px"}}>Payment Gateway, WhatsApp API, Google API, Firebase, Third Party API</td>
+<td style={{padding:"18px",textAlign:"center",fontWeight:600}}>1 hari – 3 minggu</td>
+</tr>
+
+<tr style={{background:"#FFF8F8"}}>
+<td style={{padding:"18px",fontWeight:600}}>🎨 Design Solutions</td>
+<td style={{padding:"18px"}}>UI Design, UX Design, Wireframe, Prototype, Design System</td>
+<td style={{padding:"18px",textAlign:"center",fontWeight:600}}>2 hari – 4 minggu</td>
+</tr>
+
+<tr>
+<td style={{padding:"18px",fontWeight:600}}>☁️ Cloud & Infrastructure</td>
+<td style={{padding:"18px"}}>Hosting, Cloud Deployment, Database, DevOps, CI/CD, Monitoring</td>
+<td style={{padding:"18px",textAlign:"center",fontWeight:600}}>1 hari – 2 minggu</td>
+</tr>
+
+<tr style={{background:"#FFF8F8"}}>
+<td style={{padding:"18px",fontWeight:600}}>🛠️ Maintenance & Support</td>
+<td style={{padding:"18px"}}>Bug Fix, Feature Enhancement, Security Update, Performance Optimization, Technical Support</td>
+<td style={{padding:"18px",textAlign:"center",fontWeight:600}}>Mulai 1 hari</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</section>
+
+
 </div>
 
 )
